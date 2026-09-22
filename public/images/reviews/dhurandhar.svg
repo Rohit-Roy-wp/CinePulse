@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3D3520" stop-opacity="1" />
+      <stop offset="45%" stop-color="#1A1710" stop-opacity="1" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Grain Pattern -->
+    <pattern id="grunge" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="60" cy="30" r="1.5" fill="#FFFFFF" opacity="0.04" />
+      <circle cx="90" cy="80" r="1" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="30" cy="70" r="1.2" fill="#FFFFFF" opacity="0.03" />
+      <circle cx="110" cy="100" r="1" fill="#FFFFFF" opacity="0.04" />
+    </pattern>
+
+    <!-- Star Path -->
+    <path id="star" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#E8DCC0" />
+    <path id="halfStar" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#E8DCC0" opacity="0.4" />
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" fill="url(#bgGlow)" />
+  <rect width="800" height="1200" fill="url(#grunge)" />
+
+  <!-- Top Rating Badge -->
+  <rect x="250" y="80" width="300" height="50" rx="25" fill="#B85C1E" />
+  <text x="400" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF" letter-spacing="2">⭐ 4.0 / 5.0 RATING</text>
+
+  <!-- Central Graphic: Silhouette + Crosshair -->
+  <g transform="translate(400, 380)">
+    <!-- Target crosshair rings -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="#B85C1E" stroke-width="1" opacity="0.2" />
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#B85C1E" stroke-width="1" opacity="0.3" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#B85C1E" stroke-width="1" opacity="0.4" />
+    <!-- Crosshair lines -->
+    <line x1="-220" y1="0" x2="220" y2="0" stroke="#B85C1E" stroke-width="1" opacity="0.35" />
+    <line x1="0" y1="-220" x2="0" y2="220" stroke="#B85C1E" stroke-width="1" opacity="0.35" />
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="3" fill="#FF6B1A" opacity="0.9" />
+
+    <!-- Glow -->
+    <circle cx="0" cy="0" r="130" fill="#B85C1E" opacity="0.15" />
+
+    <!-- Man silhouette -->
+    <path d="M -35,-50 C -15,-70 15,-70 35,-50 L 50,-25 L 65,50 L 60,180 L 25,180 L 18,90 L -18,90 L -25,180 L -60,180 L -65,50 L -50,-25 Z" fill="#0A0A0A" />
+    <!-- Head -->
+    <path d="M -22,-70 C -22,-95 22,-95 22,-70 L 22,-50 L -22,-50 Z" fill="#0A0A0A" />
+    <!-- Cap / Beret -->
+    <path d="M -28,-80 L 28,-80 L 22,-95 L -22,-95 Z" fill="#0A0A0A" />
+    <!-- Rifle slung across -->
+    <path d="M -60,20 L 80,-30 L 85,-22 L -55,28 Z" fill="#0A0A0A" />
+    <path d="M 80,-30 L 130,-50 L 135,-42 L 85,-22 Z" fill="#0A0A0A" />
+    <!-- Red eye -->
+    <circle cx="8" cy="-60" r="2.5" fill="#FF2200" opacity="0.9" />
+  </g>
+
+  <!-- Big DHURANDHAR Title -->
+  <text x="400" y="700" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="85" fill="#E8DCC0" letter-spacing="8">DHURANDHAR</text>
+
+  <!-- Orange Accent Line -->
+  <rect x="250" y="720" width="300" height="3" fill="#B85C1E" />
+
+  <!-- Subtitle -->
+  <text x="400" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#AAAAAA" letter-spacing="4">AN ADITYA DHAR FILM</text>
+
+  <!-- Stars Row -->
+  <g transform="translate(400, 830)">
+    <use href="#star" x="-90" y="0" />
+    <use href="#star" x="-40" y="0" />
+    <use href="#star" x="10" y="0" />
+    <use href="#star" x="60" y="0" />
+    <use href="#halfStar" x="110" y="0" />
+  </g>
+
+  <!-- Info Box -->
+  <rect x="100" y="880" width="600" height="120" rx="15" fill="#0F0D08" stroke="#B85C1E" stroke-width="1.5" />
+
+  <text x="150" y="920" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">GENRE</text>
+  <text x="150" y="950" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Action / Crime</text>
+
+  <text x="400" y="920" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">DIRECTOR</text>
+  <text x="400" y="950" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Aditya Dhar</text>
+
+  <text x="600" y="920" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">VERDICT</text>
+  <text x="600" y="950" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FF6B1A">Blockbuster</text>
+
+  <!-- Cast Line -->
+  <text x="400" y="1020" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#B8B0A0" letter-spacing="2">Ranveer Singh • Akshaye Khanna • Sanjay Dutt • R. Madhavan</text>
+
+  <!-- Quote -->
+  <text x="400" y="1075" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#CCCCCC">"A forceful and ambitious espionage drama."</text>
+
+  <!-- Bottom Badge -->
+  <rect x="250" y="1115" width="300" height="50" rx="10" fill="#B85C1E" />
+  <text x="400" y="1147" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF" letter-spacing="2">IN THEATRES NOW</text>
+</svg>

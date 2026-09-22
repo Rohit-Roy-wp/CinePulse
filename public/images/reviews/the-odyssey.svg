@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#1B3A5C" stop-opacity="1" />
+      <stop offset="40%" stop-color="#0D1F33" stop-opacity="1" />
+      <stop offset="100%" stop-color="#050A10" stop-opacity="1" />
+    </radialGradient>
+    
+    <!-- Wave Pattern -->
+    <pattern id="wavePattern" x="0" y="0" width="200" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 0 50 Q 50 20 100 50 T 200 50" fill="none" stroke="#D4AF37" stroke-width="0.8" opacity="0.15" />
+    </pattern>
+
+    <!-- Star Path -->
+    <path id="star" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#FFFFFF" />
+    <path id="halfStar" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#FFFFFF" opacity="0.6" />
+
+    <!-- Greek Helmet -->
+    <g id="greekHelmet">
+      <!-- Helmet dome -->
+      <path d="M 0,-70 C 45,-70 65,-30 65,15 L 65,45 L -65,45 L -65,15 C -65,-30 -45,-70 0,-70 Z" fill="#2A2A2A" stroke="#D4AF37" stroke-width="2" />
+      <!-- Face opening -->
+      <path d="M -25,15 L -25,60 C -25,75 -15,85 0,85 C 15,85 25,75 25,60 L 25,15 Z" fill="#0A0A0A" />
+      <!-- Nose guard -->
+      <path d="M -5,15 L -5,70 L 5,70 L 5,15 Z" fill="#2A2A2A" stroke="#D4AF37" stroke-width="1" />
+      <!-- Crest (Plume holder) -->
+      <path d="M -5,-70 L -5,-95 L 5,-95 L 5,-70 Z" fill="#D4AF37" />
+      <path d="M 0,-95 Q 15,-110 5,-130 Q -5,-110 0,-95" fill="#B8860B" />
+      <!-- Cheek guards -->
+      <path d="M -65,45 L -75,60 L -60,70 L -50,55 Z" fill="#2A2A2A" stroke="#D4AF37" stroke-width="1" />
+      <path d="M 65,45 L 75,60 L 60,70 L 50,55 Z" fill="#2A2A2A" stroke="#D4AF37" stroke-width="1" />
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" fill="url(#bgGlow)" />
+  <rect width="800" height="1200" fill="url(#wavePattern)" />
+
+  <!-- Top Rating Badge -->
+  <rect x="250" y="80" width="300" height="50" rx="25" fill="#D4AF37" />
+  <text x="400" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#0A0A0A" letter-spacing="2">⭐ 5.0 / 5.0 RATING</text>
+
+  <!-- Central Graphic -->
+  <g transform="translate(400, 380)">
+    <!-- Orbit Rings -->
+    <ellipse cx="0" cy="0" rx="260" ry="100" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.25" transform="rotate(-25)" />
+    <ellipse cx="0" cy="0" rx="260" ry="100" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.25" transform="rotate(25)" />
+    <ellipse cx="0" cy="0" rx="260" ry="100" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.25" transform="rotate(85)" />
+
+    <!-- Glow -->
+    <circle cx="0" cy="0" r="140" fill="#D4AF37" opacity="0.15" />
+
+    <!-- Trident behind helmet -->
+    <path d="M -80,-100 L 80,-100 M 0,-120 L 0,120 M -50,-100 L -50,-70 M 50,-100 L 50,-70" 
+          stroke="#B8860B" stroke-width="4" stroke-linecap="round" opacity="0.5" />
+
+    <!-- Helmet -->
+    <use href="#greekHelmet" transform="scale(1.3)" />
+  </g>
+
+  <!-- Stars Row -->
+  <g transform="translate(400, 650)">
+    <use href="#star" x="-200" y="0" />
+    <use href="#star" x="-150" y="0" />
+    <use href="#star" x="-100" y="0" />
+    <use href="#star" x="-50" y="0" />
+    <use href="#star" x="0" y="0" />
+    <use href="#star" x="50" y="0" />
+    <use href="#star" x="100" y="0" />
+    <use href="#star" x="150" y="0" />
+    <use href="#star" x="200" y="0" />
+  </g>
+
+  <!-- Subtitle -->
+  <text x="400" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#D4AF37" letter-spacing="5">A CHRISTOPHER NOLAN FILM</text>
+
+  <!-- Info Box -->
+  <rect x="100" y="780" width="600" height="120" rx="15" fill="#0F1A26" stroke="#D4AF37" stroke-width="1" opacity="0.9" />
+  
+  <text x="150" y="820" font-family="Arial, sans-serif" font-size="14" fill="#7A8A9A" letter-spacing="1">GENRE</text>
+  <text x="150" y="850" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Epic / Mythological</text>
+  
+  <text x="400" y="820" font-family="Arial, sans-serif" font-size="14" fill="#7A8A9A" letter-spacing="1">STARRING</text>
+  <text x="400" y="850" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Matt Damon</text>
+  
+  <text x="600" y="820" font-family="Arial, sans-serif" font-size="14" fill="#7A8A9A" letter-spacing="1">VERDICT</text>
+  <text x="600" y="850" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#D4AF37">Epic Masterpiece</text>
+
+  <!-- Quote -->
+  <text x="400" y="970" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#C8D4E0">"Tell me, O Muse, of that ingenious hero who travelled far and wide."</text>
+
+  <!-- Bottom Badge -->
+  <rect x="250" y="1030" width="300" height="50" rx="10" fill="#D4AF37" />
+  <text x="400" y="1062" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#0A0A0A" letter-spacing="2">7 OSCAR WINNER</text>
+</svg>

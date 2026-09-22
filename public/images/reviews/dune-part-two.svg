@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dune-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d1502" />
+      <stop offset="45%" stop-color="#78350f" />
+      <stop offset="75%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#1c1108" />
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="30%" r="30%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#dune-sky)" />
+  <circle cx="400" cy="320" r="180" fill="url(#sun)" />
+
+  <!-- Twin Moons of Arrakis -->
+  <circle cx="280" cy="180" r="32" fill="#fed7aa" opacity="0.8" />
+  <circle cx="520" cy="220" r="20" fill="#fed7aa" opacity="0.6" />
+
+  <!-- Sand Dunes Layer 1 -->
+  <path d="M-50,600 Q200,450 480,560 T850,510 L850,1200 L-50,1200 Z" fill="#92400e" opacity="0.8" />
+  <!-- Sand Dunes Layer 2 -->
+  <path d="M-50,680 Q320,580 550,690 T850,640 L850,1200 L-50,1200 Z" fill="#78350f" opacity="0.9" />
+  <!-- Sand Dunes Layer 3 (Foreground) -->
+  <path d="M-50,780 Q250,710 500,810 T850,750 L850,1200 L-50,1200 Z" fill="#451a03" />
+
+  <!-- Sandworm Silhouette Maw in Background -->
+  <g transform="translate(400, 480)" opacity="0.3">
+    <ellipse cx="0" cy="0" rx="140" ry="140" fill="#1c1917" />
+    <ellipse cx="0" cy="0" rx="80" ry="80" fill="#0c0a09" />
+  </g>
+
+  <!-- Paul Atreides with Blue Eyes of Ibad -->
+  <g transform="translate(370, 480)">
+    <path d="M30,-20 L-10,120 L70,120 Z" fill="#0c0a09" />
+    <circle cx="22" cy="10" r="4" fill="#38bdf8" />
+    <circle cx="38" cy="10" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- Rating Badge -->
+  <g transform="translate(300, 80)">
+    <rect width="200" height="42" rx="21" fill="#b45309" fill-opacity="0.5" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="100" y="27" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#fef08a" text-anchor="middle">★ 4.7 / 5.0 RATING</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="400" y="880" font-family="'Impact', 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="8" text-anchor="middle">DUNE: PART TWO</text>
+  <text x="400" y="920" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#fcd34d" letter-spacing="4" text-anchor="middle">A DENIS VILLENEUVE MASTERWORK</text>
+
+  <!-- Metadata Cards -->
+  <g transform="translate(100, 960)">
+    <rect width="600" height="90" rx="16" fill="#000000" fill-opacity="0.75" stroke="#f59e0b" stroke-opacity="0.3" />
+    <text x="50" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">GENRE</text>
+    <text x="50" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Sci-Fi Epic</text>
+    
+    <text x="240" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">DIRECTOR</text>
+    <text x="240" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Denis Villeneuve</text>
+
+    <text x="430" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">VERDICT</text>
+    <text x="430" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#f59e0b">Cinematic Bible</text>
+  </g>
+
+  <g transform="translate(250, 1080)">
+    <rect width="300" height="45" rx="8" fill="#d97706" />
+    <text x="150" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" letter-spacing="3" text-anchor="middle">LISAN AL GAIB</text>
+  </g>
+</svg>

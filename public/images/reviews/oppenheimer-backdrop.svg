@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="op-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050608" />
+      <stop offset="50%" stop-color="#190a04" />
+      <stop offset="100%" stop-color="#020305" />
+    </linearGradient>
+    <radialGradient id="trinity" cx="80%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#fdba74" stop-opacity="0.85" />
+      <stop offset="25%" stop-color="#ea580c" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#7c2d12" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#op-bg2)" />
+  <circle cx="1200" cy="350" r="550" fill="url(#trinity)" />
+  <text x="1200" y="420" font-family="'Impact', sans-serif" font-size="200" font-weight="900" fill="#ffffff" fill-opacity="0.04" text-anchor="middle">TRINITY</text>
+  
+  <g transform="translate(120, 320)">
+    <rect width="180" height="36" rx="18" fill="#ea580c" />
+    <text x="90" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">HOLLYWOOD MASTERPIECE</text>
+    <text x="0" y="110" font-family="'Impact', 'Arial Black', sans-serif" font-size="76" font-weight="900" fill="#ffffff" letter-spacing="4">OPPENHEIMER</text>
+    <text x="0" y="160" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#fdba74">Christopher Nolan • Cillian Murphy • Robert Downey Jr.</text>
+    <text x="0" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#d1d5db">A haunting, earth-shaking cinematic exploration of conscience, science, and annihilation.</text>
+    <text x="0" y="270" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#f59e0b">★ 4.8 / 5.0 • CRITICAL TRIUMPH</text>
+  </g>
+</svg>

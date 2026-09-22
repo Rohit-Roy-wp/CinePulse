@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dune-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c0f05" />
+      <stop offset="50%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#0a0502" />
+    </linearGradient>
+    <radialGradient id="arrakis-sun" cx="75%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#78350f" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dune-bg2)" />
+  <circle cx="1200" cy="300" r="500" fill="url(#arrakis-sun)" />
+  
+  <!-- Massive Sand Dunes Horizon -->
+  <path d="M700,900 Q1050,550 1600,680 L1600,900 Z" fill="#78350f" opacity="0.6" />
+  <path d="M500,900 Q950,680 1600,820 L1600,900 Z" fill="#451a03" />
+
+  <text x="1200" y="420" font-family="'Impact', sans-serif" font-size="200" font-weight="900" fill="#ffffff" fill-opacity="0.04" text-anchor="middle">ARRAKIS</text>
+
+  <g transform="translate(120, 320)">
+    <rect width="180" height="36" rx="18" fill="#d97706" />
+    <text x="90" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">SCI-FI PHENOMENON</text>
+    <text x="0" y="110" font-family="'Impact', 'Arial Black', sans-serif" font-size="76" font-weight="900" fill="#ffffff" letter-spacing="4">DUNE: PART TWO</text>
+    <text x="0" y="160" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#fcd34d">Denis Villeneuve • Timothée Chalamet • Zendaya</text>
+    <text x="0" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#d1d5db">An intoxicating, awe-inspiring, and terrifyingly intelligent modern sci-fi bible.</text>
+    <text x="0" y="270" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#f59e0b">★ 4.7 / 5.0 • CRITICAL MASTERPIECE</text>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="op-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050608" />
+      <stop offset="35%" stop-color="#1c0b05" />
+      <stop offset="70%" stop-color="#2d1305" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+    <radialGradient id="atomic-blast" cx="50%" cy="38%" r="45%">
+      <stop offset="0%" stop-color="#ffedd5" stop-opacity="0.9" />
+      <stop offset="15%" stop-color="#fb923c" stop-opacity="0.75" />
+      <stop offset="40%" stop-color="#ea580c" stop-opacity="0.5" />
+      <stop offset="75%" stop-color="#7c2d12" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#op-bg)" />
+  <circle cx="400" cy="400" r="380" fill="url(#atomic-blast)" />
+
+  <!-- Atomic Orbital Rings -->
+  <ellipse cx="400" cy="400" rx="280" ry="100" fill="none" stroke="#fed7aa" stroke-width="2" opacity="0.4" transform="rotate(30 400 400)" />
+  <ellipse cx="400" cy="400" rx="280" ry="100" fill="none" stroke="#f97316" stroke-width="2" opacity="0.4" transform="rotate(-30 400 400)" />
+  <ellipse cx="400" cy="400" rx="280" ry="100" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3" transform="rotate(90 400 400)" />
+
+  <!-- Silhouette of Oppenheimer with Fedora -->
+  <g transform="translate(320, 290)">
+    <!-- Fedora Hat -->
+    <path d="M-60,70 Q80,20 220,70 Q80,50 -60,70 Z" fill="#0c0a09" />
+    <path d="M0,70 Q10,-10 80,-10 Q150,-10 160,70 Z" fill="#0c0a09" />
+    <path d="M10,65 L150,65 L145,55 L15,55 Z" fill="#78350f" opacity="0.8" />
+    <!-- Face / Pipe Silhouette -->
+    <path d="M30,70 L40,150 Q80,180 120,150 L130,70 Z" fill="#1c1917" />
+    <line x1="80" y1="130" x2="130" y2="155" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Rating Badge -->
+  <g transform="translate(300, 100)">
+    <rect width="200" height="42" rx="21" fill="#ea580c" fill-opacity="0.25" stroke="#f97316" stroke-width="1.5" />
+    <text x="100" y="27" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffedd5" text-anchor="middle">★ 4.8 / 5.0 RATING</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="400" y="700" font-family="'Impact', 'Arial Black', sans-serif" font-size="78" font-weight="900" fill="#ffffff" letter-spacing="8" text-anchor="middle">OPPENHEIMER</text>
+  <text x="400" y="745" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fb923c" letter-spacing="4" text-anchor="middle">A CHRISTOPHER NOLAN FILM</text>
+
+  <!-- Metadata Cards -->
+  <g transform="translate(100, 800)">
+    <rect width="600" height="90" rx="16" fill="#000000" fill-opacity="0.65" stroke="#f97316" stroke-opacity="0.2" />
+    <text x="50" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">GENRE</text>
+    <text x="50" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Biopic / Thriller</text>
+    
+    <text x="240" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">STARRING</text>
+    <text x="240" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Cillian Murphy</text>
+
+    <text x="430" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">VERDICT</text>
+    <text x="430" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#f59e0b">Masterpiece</text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="400" y="960" font-family="system-ui, sans-serif" font-size="20" font-style="italic" fill="#fed7aa" text-anchor="middle">"Now I Am Become Death, The Destroyer of Worlds"</text>
+  
+  <g transform="translate(250, 1040)">
+    <rect width="300" height="45" rx="8" fill="#c2410c" />
+    <text x="150" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" letter-spacing="3" text-anchor="middle">7 OSCAR WINNER</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fail-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09141f" />
+      <stop offset="40%" stop-color="#0f283d" />
+      <stop offset="80%" stop-color="#1e3a5f" />
+      <stop offset="100%" stop-color="#080e18" />
+    </linearGradient>
+    <radialGradient id="study-lamp" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="25%" stop-color="#eab308" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#ca8a04" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#fail-bg)" />
+  <circle cx="400" cy="340" r="320" fill="url(#study-lamp)" />
+
+  <!-- Study Desk and Books Stack -->
+  <g transform="translate(260, 360)">
+    <!-- Book 1 -->
+    <rect x="30" y="80" width="220" height="35" rx="4" fill="#3b82f6" />
+    <!-- Book 2 -->
+    <rect x="40" y="45" width="200" height="35" rx="4" fill="#ef4444" />
+    <!-- Book 3 -->
+    <rect x="50" y="10" width="180" height="35" rx="4" fill="#10b981" />
+    <!-- UPSC Notebook -->
+    <text x="140" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">UPSC MAINS NOTES</text>
+  </g>
+
+  <!-- #RESTART Badge -->
+  <g transform="translate(280, 160)">
+    <rect width="240" height="52" rx="26" fill="#eab308" />
+    <text x="120" y="34" font-family="'Impact', sans-serif" font-size="28" font-weight="bold" fill="#0f172a" letter-spacing="2" text-anchor="middle">#RESTART</text>
+  </g>
+
+  <!-- Rating Badge -->
+  <g transform="translate(300, 80)">
+    <rect width="200" height="42" rx="21" fill="#0f283d" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="100" y="27" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="middle">★ 4.9 / 5.0 RATING</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="400" y="680" font-family="'Impact', 'Arial Black', sans-serif" font-size="92" font-weight="900" fill="#ffffff" letter-spacing="6" text-anchor="middle">12TH FAIL</text>
+  <text x="400" y="730" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#38bdf8" letter-spacing="4" text-anchor="middle">A VIDHU VINOD CHOPRA TRIUMPH</text>
+
+  <!-- Metadata Cards -->
+  <g transform="translate(100, 800)">
+    <rect width="600" height="90" rx="16" fill="#000000" fill-opacity="0.65" stroke="#38bdf8" stroke-opacity="0.3" />
+    <text x="50" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">GENRE</text>
+    <text x="50" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Biopic / Drama</text>
+    
+    <text x="240" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">STARRING</text>
+    <text x="240" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Vikrant Massey</text>
+
+    <text x="430" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">VERDICT</text>
+    <text x="430" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#f59e0b">All-Time Classic</text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="400" y="960" font-family="system-ui, sans-serif" font-size="20" font-style="italic" fill="#e2e8f0" text-anchor="middle">"Haar Nahi Manunga... Jab Tak Jeetunga Nahi, Rukunga Nahi"</text>
+
+  <g transform="translate(250, 1040)">
+    <rect width="300" height="45" rx="8" fill="#2563eb" />
+    <text x="150" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" letter-spacing="3" text-anchor="middle">PEOPLE'S CHOICE 2024</text>
+  </g>
+</svg>

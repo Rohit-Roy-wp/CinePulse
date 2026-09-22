@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="backdropGlow" cx="80%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#E62429" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#8B0000" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#1A0000" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1" />
+    </radialGradient>
+    
+    <!-- Watermark Web Pattern -->
+    <pattern id="webWatermark" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M 0 100 Q 100 0 200 100 Q 100 200 0 100" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.05" />
+      <path d="M 100 0 Q 0 100 100 200 Q 200 100 100 0" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.05" />
+    </pattern>
+
+    <!-- Star Path -->
+    <path id="star" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#FFFFFF" />
+    
+    <!-- Half Star Path -->
+    <path id="halfStar" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#FFFFFF" opacity="0.6" />
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#backdropGlow)" />
+  <rect width="1600" height="900" fill="url(#webWatermark)" />
+
+  <!-- Right Side Spider Watermark -->
+  <g transform="translate(1200, 450) scale(4)" opacity="0.1">
+    <path d="M 0,-60 C 40,-60 60,-20 60,20 C 60,60 40,90 0,90 C -40,90 -60,60 -60,20 C -60,-20 -40,-60 0,-60 Z" fill="#FFFFFF" />
+    <path d="M -35,-10 C -15,-25 -5,-10 -10,10 C -15,25 -35,20 -35,-10 Z" fill="#000000" />
+    <path d="M 35,-10 C 15,-25 5,-10 10,10 C 15,25 35,20 35,-10 Z" fill="#000000" />
+  </g>
+
+  <!-- Left Side Content -->
+  
+  <!-- Badge -->
+  <rect x="120" y="250" width="220" height="40" rx="20" fill="#E62429" />
+  <text x="230" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF" letter-spacing="1">HOLLYWOOD MASTERPIECE</text>
+
+  <!-- Stars Row -->
+  <g transform="translate(230, 340)">
+    <use href="#star" x="-120" y="0" />
+    <use href="#star" x="-80" y="0" />
+    <use href="#star" x="-40" y="0" />
+    <use href="#halfStar" x="0" y="0" />
+    <use href="#star" x="40" y="0" />
+    <use href="#star" x="80" y="0" />
+    <use href="#star" x="120" y="0" />
+    <use href="#star" x="160" y="0" />
+    <use href="#star" x="200" y="0" />
+    <use href="#star" x="240" y="0" />
+    <use href="#halfStar" x="280" y="0" />
+  </g>
+
+  <!-- Names -->
+  <text x="120" y="420" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#E62429">Tom Holland • Zendaya • Jacob Batalon</text>
+
+  <!-- Description -->
+  <text x="120" y="470" font-family="Arial, sans-serif" font-size="18" fill="#AAAAAA">A thrilling, web-slinging cinematic adventure of identity, sacrifice, and heroism.</text>
+
+  <!-- Rating & Verdict -->
+  <text x="120" y="530" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#F5A623">⭐ 4.9 / 5.0 • CRITICAL TRIUMPH</text>
+
+  <!-- Faded Background Stars (Right Side) -->
+  <g transform="translate(1300, 350)" opacity="0.1">
+    <use href="#star" x="0" y="0" transform="scale(3)" />
+    <use href="#star" x="100" y="0" transform="scale(3)" />
+    <use href="#star" x="200" y="0" transform="scale(3)" />
+    <use href="#star" x="300" y="0" transform="scale(3)" />
+  </g>
+</svg>

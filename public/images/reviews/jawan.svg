@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0003" />
+      <stop offset="40%" stop-color="#3d0309" />
+      <stop offset="70%" stop-color="#140104" />
+      <stop offset="100%" stop-color="#080002" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#e50914" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="1200" fill="url(#bg)" />
+  <circle cx="400" cy="420" r="350" fill="url(#glow)" />
+  
+  <!-- Stylized Bandage & Mask Silhouette -->
+  <g opacity="0.15">
+    <path d="M150,250 L650,210 L680,290 L120,330 Z" fill="#ffffff" />
+    <path d="M120,380 L680,340 L690,420 L110,460 Z" fill="#ffffff" />
+    <path d="M140,510 L660,470 L670,550 L130,590 Z" fill="#ffffff" />
+  </g>
+  
+  <!-- Film Reel Ring -->
+  <circle cx="400" cy="420" r="240" fill="none" stroke="#e50914" stroke-width="3" stroke-dasharray="16 8" opacity="0.4" />
+  <circle cx="400" cy="420" r="180" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.3" />
+  
+  <!-- Star Rating Badge -->
+  <g transform="translate(300, 140)">
+    <rect width="200" height="42" rx="21" fill="#e50914" fill-opacity="0.25" stroke="#e50914" stroke-width="1.5" />
+    <text x="100" y="27" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#fcd34d" text-anchor="middle">★ 4.5 / 5.0 RATING</text>
+  </g>
+
+  <!-- Dramatic Silhouette Motif -->
+  <circle cx="400" cy="380" r="120" fill="#080002" stroke="#e50914" stroke-width="4" />
+  <path d="M330,420 Q400,320 470,420 Z" fill="#e50914" opacity="0.8" />
+  <text x="400" y="395" font-family="system-ui, sans-serif" font-size="64" font-weight="900" fill="#f3f4f6" text-anchor="middle">SRK</text>
+  
+  <!-- Main Title -->
+  <text x="400" y="700" font-family="'Impact', 'Arial Black', sans-serif" font-size="108" font-weight="900" fill="#ffffff" letter-spacing="12" text-anchor="middle">JAWAN</text>
+  <text x="400" y="745" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="url(#gold)" letter-spacing="6" text-anchor="middle">AN ATLEE FILM • MASS SPECTACLE</text>
+
+  <!-- Metadata Cards -->
+  <g transform="translate(100, 800)">
+    <rect width="600" height="90" rx="16" fill="#000000" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.1" />
+    <text x="50" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">GENRE</text>
+    <text x="50" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Action / Thriller</text>
+    
+    <text x="240" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">DIRECTOR</text>
+    <text x="240" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Atlee</text>
+
+    <text x="430" y="38" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">VERDICT</text>
+    <text x="430" y="65" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#f59e0b">All-Time Hit</text>
+  </g>
+
+  <!-- Tagline & CinePulse Branding -->
+  <text x="400" y="970" font-family="system-ui, sans-serif" font-size="20" font-style="italic" fill="#e5e7eb" text-anchor="middle">"Ready Steady Po! The King Unleashes True Mass Cinema"</text>
+  
+  <g transform="translate(250, 1050)">
+    <rect width="300" height="45" rx="8" fill="#e50914" />
+    <text x="150" y="28" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" letter-spacing="3" text-anchor="middle">CINEPULSE VERIFIED</text>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#4A1500" stop-opacity="1" />
+      <stop offset="45%" stop-color="#1A0805" stop-opacity="1" />
+      <stop offset="100%" stop-color="#050202" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Grain Pattern -->
+    <pattern id="grunge" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="60" cy="30" r="1.5" fill="#FFFFFF" opacity="0.04" />
+      <circle cx="90" cy="80" r="1" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="30" cy="70" r="1.2" fill="#FFFFFF" opacity="0.03" />
+      <circle cx="110" cy="100" r="1" fill="#FFFFFF" opacity="0.04" />
+    </pattern>
+
+    <!-- Star Path -->
+    <path id="star" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#E8DCC0" />
+    <path id="halfStar" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#E8DCC0" opacity="0.4" />
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" fill="url(#bgGlow)" />
+  <rect width="800" height="1200" fill="url(#grunge)" />
+
+  <!-- Blood Splatter Top Right -->
+  <ellipse cx="680" cy="150" rx="120" ry="40" fill="#8B0000" opacity="0.25" transform="rotate(-20 680 150)" />
+
+  <!-- Top Rating Badge -->
+  <rect x="250" y="80" width="300" height="50" rx="25" fill="#C1272D" />
+  <text x="400" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF" letter-spacing="2">⭐ 4.0 / 5.0 RATING</text>
+
+  <!-- Central Graphic: Silhouette + Revenge Skull/Crosshair -->
+  <g transform="translate(400, 380)">
+    <!-- Circular target rings (revenge target) -->
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#C1272D" stroke-width="1" opacity="0.15" />
+    <circle cx="0" cy="0" r="170" fill="none" stroke="#C1272D" stroke-width="1.5" opacity="0.25" />
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#C1272D" stroke-width="2" opacity="0.4" />
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#FF6B1A" stroke-width="2" opacity="0.6" />
+    <!-- Crosshair -->
+    <line x1="-240" y1="0" x2="240" y2="0" stroke="#C1272D" stroke-width="1.5" opacity="0.4" />
+    <line x1="0" y1="-240" x2="0" y2="240" stroke="#C1272D" stroke-width="1.5" opacity="0.4" />
+    <circle cx="0" cy="0" r="4" fill="#FF2200" opacity="0.95" />
+
+    <!-- Red Glow -->
+    <circle cx="0" cy="0" r="140" fill="#C1272D" opacity="0.15" />
+
+    <!-- Man silhouette with coat (avenging figure) -->
+    <path d="M -45,-50 C -25,-75 25,-75 45,-50 L 60,-20 L 80,60 L 75,200 L 35,200 L 22,100 L -22,100 L -35,200 L -75,200 L -80,60 L -60,-20 Z" fill="#0A0505" />
+    <!-- Head -->
+    <path d="M -25,-75 C -25,-105 25,-105 25,-75 L 25,-50 L -25,-50 Z" fill="#0A0505" />
+    <!-- Wide brim hat -->
+    <path d="M -50,-90 L 50,-90 L 35,-105 L -35,-105 Z" fill="#0A0505" />
+    <!-- Rifle in hand -->
+    <path d="M -75,10 L 90,-40 L 95,-30 L -70,20 Z" fill="#0A0505" />
+    <path d="M 90,-40 L 145,-60 L 150,-50 L 95,-30 Z" fill="#0A0505" />
+    <!-- Glowing red eyes -->
+    <circle cx="-8" cy="-65" r="2.5" fill="#FF2200" opacity="0.9" />
+    <circle cx="8" cy="-65" r="2.5" fill="#FF2200" opacity="0.9" />
+  </g>
+
+  <!-- Big DHURANDHAR Title -->
+  <text x="400" y="680" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="78" fill="#E8DCC0" letter-spacing="6">DHURANDHAR</text>
+
+  <!-- Red Accent Line -->
+  <rect x="280" y="700" width="240" height="3" fill="#C1272D" />
+
+  <!-- Subtitle: THE REVENGE -->
+  <text x="400" y="755" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="38" fill="#C1272D" letter-spacing="12">THE REVENGE</text>
+
+  <!-- Director Line -->
+  <text x="400" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#AAAAAA" letter-spacing="4">AN ADITYA DHAR FILM</text>
+
+  <!-- Stars Row -->
+  <g transform="translate(400, 850)">
+    <use href="#star" x="-90" y="0" />
+    <use href="#star" x="-40" y="0" />
+    <use href="#star" x="10" y="0" />
+    <use href="#star" x="60" y="0" />
+    <use href="#halfStar" x="110" y="0" />
+  </g>
+
+  <!-- Info Box -->
+  <rect x="100" y="900" width="600" height="120" rx="15" fill="#0F0505" stroke="#C1272D" stroke-width="1.5" />
+
+  <text x="150" y="940" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">GENRE</text>
+  <text x="150" y="970" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Action / Thriller</text>
+
+  <text x="400" y="940" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">RELEASE</text>
+  <text x="400" y="970" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Mar 19, 2026</text>
+
+  <text x="600" y="940" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">VERDICT</text>
+  <text x="600" y="970" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FF6B1A">Blockbuster</text>
+
+  <!-- Cast Line -->
+  <text x="400" y="1040" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#B8B0A0" letter-spacing="2">Ranveer Singh • Akshaye Khanna • Sanjay Dutt • R. Madhavan</text>
+
+  <!-- Quote -->
+  <text x="400" y="1085" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#CCCCCC">"Revenge is never a simple answer."</text>
+
+  <!-- Bottom Badge -->
+  <rect x="230" y="1120" width="340" height="50" rx="10" fill="#C1272D" />
+  <text x="400" y="1152" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="17" fill="#FFFFFF" letter-spacing="2">IN THEATRES MAR 19</text>
+</svg>

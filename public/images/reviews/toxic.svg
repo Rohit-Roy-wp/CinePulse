@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3A3A3A" stop-opacity="1" />
+      <stop offset="45%" stop-color="#1A1A1A" stop-opacity="1" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Grain / Grunge Pattern -->
+    <pattern id="grunge" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="60" cy="30" r="1.5" fill="#FFFFFF" opacity="0.04" />
+      <circle cx="90" cy="80" r="1" fill="#FFFFFF" opacity="0.05" />
+      <circle cx="30" cy="70" r="1.2" fill="#FFFFFF" opacity="0.03" />
+      <circle cx="110" cy="100" r="1" fill="#FFFFFF" opacity="0.04" />
+    </pattern>
+
+    <!-- Star Path -->
+    <path id="star" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#E0E0E0" />
+    <path id="halfStar" d="M 0,-15 L 4,-4 L 15,-4 L 6,3 L 9,14 L 0,7 L -9,14 L -6,3 L -15,-4 L -4,-4 Z" fill="#E0E0E0" opacity="0.4" />
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" fill="url(#bgGlow)" />
+  <rect width="800" height="1200" fill="url(#grunge)" />
+
+  <!-- Top Rating Badge -->
+  <rect x="250" y="80" width="300" height="50" rx="25" fill="#8B0000" />
+  <text x="400" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF" letter-spacing="2">⭐ 4.0 / 5.0 RATING</text>
+
+  <!-- Central Silhouette (Yash with gun) -->
+  <g transform="translate(400, 380)">
+    <!-- Blood Splatter behind -->
+    <ellipse cx="0" cy="180" rx="220" ry="30" fill="#8B0000" opacity="0.7" />
+    <ellipse cx="30" cy="185" rx="120" ry="15" fill="#B22222" opacity="0.6" />
+    <ellipse cx="-60" cy="190" rx="80" ry="12" fill="#8B0000" opacity="0.5" />
+
+    <!-- Faint glow -->
+    <circle cx="0" cy="0" r="150" fill="#8B0000" opacity="0.12" />
+
+    <!-- Silhouette Body -->
+    <path d="M -40,-40 C -20,-60 20,-60 40,-40 L 55,-20 L 70,40 L 65,180 L 30,180 L 20,80 L -20,80 L -30,180 L -65,180 L -70,40 L -55,-20 Z" fill="#0A0A0A" />
+    <!-- Head + Hat -->
+    <path d="M -25,-60 C -25,-85 25,-85 25,-60 L 25,-40 L -25,-40 Z" fill="#0A0A0A" />
+    <path d="M -45,-75 L 45,-75 L 35,-85 L -35,-85 Z" fill="#0A0A0A" />
+    <!-- Gun (shotgun) -->
+    <path d="M -70,20 L -140,-30 L -145,-22 L -75,30 Z" fill="#0A0A0A" />
+    <path d="M -140,-30 L -180,-45 L -185,-38 L -145,-22 Z" fill="#0A0A0A" />
+    <!-- Red glowing eye -->
+    <circle cx="10" cy="-50" r="2.5" fill="#FF2200" opacity="0.9" />
+  </g>
+
+  <!-- Big TOXIC Title -->
+  <text x="400" y="700" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="140" fill="#E0E0E0" letter-spacing="20" opacity="0.9">TOXIC</text>
+
+  <!-- Blood Drip effect under title -->
+  <g transform="translate(400, 720)">
+    <path d="M -260,0 Q -240,15 -220,0 Q -200,20 -180,0 Q -160,10 -140,0 Q -100,25 -60,0 Q -20,15 20,0 Q 60,20 100,0 Q 140,10 180,0 Q 220,20 260,0 L 260,8 L -260,8 Z" fill="#8B0000" opacity="0.85" />
+  </g>
+
+  <!-- Subtitle -->
+  <text x="400" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#AAAAAA" letter-spacing="4">A FAIRY TALE FOR GROWN-UPS</text>
+
+  <!-- Stars Row -->
+  <g transform="translate(400, 850)">
+    <use href="#star" x="-90" y="0" />
+    <use href="#star" x="-40" y="0" />
+    <use href="#star" x="10" y="0" />
+    <use href="#star" x="60" y="0" />
+    <use href="#halfStar" x="110" y="0" />
+  </g>
+
+  <!-- Info Box -->
+  <rect x="100" y="900" width="600" height="120" rx="15" fill="#0F0F0F" stroke="#8B0000" stroke-width="1.5" />
+  
+  <text x="150" y="940" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">GENRE</text>
+  <text x="150" y="970" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Action / Crime</text>
+
+  <text x="400" y="940" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">DIRECTOR</text>
+  <text x="400" y="970" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF">Geetu Mohandas</text>
+
+  <text x="600" y="940" font-family="Arial, sans-serif" font-size="14" fill="#888888" letter-spacing="1">VERDICT</text>
+  <text x="600" y="970" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#B22222">One-Time Watch</text>
+
+  <!-- Quote -->
+  <text x="400" y="1070" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#CCCCCC">"A bold and visually striking action drama."</text>
+
+  <!-- Bottom Badge -->
+  <rect x="250" y="1110" width="300" height="50" rx="10" fill="#8B0000" />
+  <text x="400" y="1142" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF" letter-spacing="2">IN THEATRES NOW</text>
+</svg>

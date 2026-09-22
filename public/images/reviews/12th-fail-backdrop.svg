@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fail-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050e17" />
+      <stop offset="50%" stop-color="#0b1e33" />
+      <stop offset="100%" stop-color="#03080f" />
+    </linearGradient>
+    <radialGradient id="desk-light" cx="75%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="35%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#0c4a6e" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#fail-bg2)" />
+  <circle cx="1200" cy="350" r="500" fill="url(#desk-light)" />
+  <text x="1200" y="420" font-family="'Impact', sans-serif" font-size="190" font-weight="900" fill="#ffffff" fill-opacity="0.04" text-anchor="middle">#RESTART</text>
+
+  <g transform="translate(120, 320)">
+    <rect width="180" height="36" rx="18" fill="#0284c7" />
+    <text x="90" y="23" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">BOLLYWOOD GEM</text>
+    <text x="0" y="110" font-family="'Impact', 'Arial Black', sans-serif" font-size="80" font-weight="900" fill="#ffffff" letter-spacing="4">12TH FAIL</text>
+    <text x="0" y="160" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#7dd3fc">Vidhu Vinod Chopra • Vikrant Massey • Medha Shankr</text>
+    <text x="0" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#d1d5db">An extraordinary, emotionally charged testament to perseverance, honesty, and hope.</text>
+    <text x="0" y="270" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#f59e0b">★ 4.9 / 5.0 • INSPIRATIONAL MASTERPIECE</text>
+  </g>
+</svg>
