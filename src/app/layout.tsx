@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/common/CookieConsent";
 import { AdSlot } from "@/components/ads/AdSlot";
 import { getAllReviews } from "@/lib/reviews";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cinepulse.blog"),
@@ -87,6 +88,9 @@ export default function RootLayout({
 
         {/* GDPR & AdSense Cookie Consent Banner */}
         <CookieConsent />
+
+        {/* Vercel Web Analytics */}
+        <Analytics />
       </body>
     </html>
   );
