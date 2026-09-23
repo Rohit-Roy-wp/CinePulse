@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/common/CookieConsent";
@@ -87,6 +88,9 @@ export default function RootLayout({
 
         {/* GDPR & AdSense Cookie Consent Banner */}
         <CookieConsent />
+
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );
