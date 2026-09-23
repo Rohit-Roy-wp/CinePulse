@@ -67,7 +67,6 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <head>
         <meta name="theme-color" content="#090a0f" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="min-h-screen flex flex-col bg-[#090a0f] text-[#f3f4f6] antialiased">
         {/* Navigation Header with Search */}
