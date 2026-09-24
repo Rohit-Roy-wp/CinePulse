@@ -68,7 +68,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#090a0f" />
       </head>
-      <body className="min-h-screen flex flex-col bg-[#090a0f] text-[#f3f4f6] antialiased">
+      <body className="min-h-screen flex flex-col bg-[#090a0f] text-[#f3f4f6] antialiased" suppressHydrationWarning>
         {/* Navigation Header with Search */}
         <SiteHeader reviews={reviews} />
 
