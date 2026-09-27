@@ -38,7 +38,7 @@ export function JsonLd({ review }: JsonLdProps) {
       worstRating: 1,
     },
     itemReviewed: {
-      "@type": review.category === "Web Series" ? "TVSeries" : "Movie",
+      "@type": review.category === "Web Series" || review.category === "Anime" ? "TVSeries" : "Movie",
       name: movieTitle,
       director: {
         "@type": "Person",

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Film, Search, Menu, X, Clapperboard, Flame } from "lucide-react";
+import { Film, Search, Menu, X, Clapperboard, Flame, Sparkles } from "lucide-react";
 
 interface NavbarProps {
   onSearchOpen?: () => void;
@@ -64,6 +64,13 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
               className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
             >
               South Cinema
+            </Link>
+            <Link
+              href="/category/anime"
+              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5"
+            >
+              <Sparkles className="w-4 h-4 text-violet-500" />
+              Anime
             </Link>
           </nav>
 
@@ -136,6 +143,13 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
               className="block px-4 py-2.5 rounded-lg text-base font-medium text-zinc-300 hover:text-white hover:bg-white/5"
             >
               South Cinema
+            </Link>
+            <Link
+              href="/category/anime"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-4 py-2.5 rounded-lg text-base font-medium text-zinc-300 hover:text-white hover:bg-white/5"
+            >
+              Anime
             </Link>
             <div className="pt-2 border-t border-white/10 flex flex-col gap-2 px-4">
               <Link

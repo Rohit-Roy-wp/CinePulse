@@ -104,6 +104,10 @@ export function getAllCategories(): CategoryInfo[] {
       name: "South Cinema",
       description: "Coverage of groundbreaking Telugu, Tamil, Malayalam, and Kannada films making pan-India waves.",
     },
+    anime: {
+      name: "Anime",
+      description: "In-depth reviews, thematic breakdowns, and verdicts on iconic Japanese anime series and feature films.",
+    },
   };
 
   allReviews.forEach((review) => {
@@ -116,7 +120,7 @@ export function getAllCategories(): CategoryInfo[] {
     }
   });
 
-  return Object.entries(standardCategories).map(([slug, meta]) => {
+  const categories: CategoryInfo[] = Object.entries(standardCategories).map(([slug, meta]) => {
     const match = categoryMap.get(slug);
     return {
       slug,
@@ -125,4 +129,17 @@ export function getAllCategories(): CategoryInfo[] {
       count: match ? match.count : 0,
     };
   });
+
+  categoryMap.forEach((info, slug) => {
+    if (!standardCategories[slug]) {
+      categories.push({
+        slug,
+        name: info.name,
+        description: `Explore the latest ${info.name} reviews, ratings, and critical breakdowns.`,
+        count: info.count,
+      });
+    }
+  });
+
+  return categories;
 }

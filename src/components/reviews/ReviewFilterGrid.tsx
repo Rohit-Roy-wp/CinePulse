@@ -4,6 +4,9 @@ import React, { useState, useMemo } from "react";
 import { ReviewPost } from "@/lib/types";
 import { ReviewCard } from "./ReviewCard";
 import { Search, SlidersHorizontal, Sparkles } from "lucide-react";
+import { parseReleaseDate } from "@/lib/utils";
+
+export type SortOption = "latest" | "release-newest" | "release-oldest" | "rating";
 
 interface ReviewFilterGridProps {
   reviews: ReviewPost[];
@@ -11,10 +14,10 @@ interface ReviewFilterGridProps {
 
 export function ReviewFilterGrid({ reviews }: ReviewFilterGridProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const [sortBy, setSortBy] = useState<"latest" | "rating">("latest");
+  const [sortBy, setSortBy] = useState<SortOption>("latest");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const categories = ["All", "Bollywood", "Hollywood", "Web Series", "South Cinema"];
+  const categories = ["All", "Bollywood", "Hollywood", "Web Series", "South Cinema", "Anime"];
 
   const filteredReviews = useMemo(() => {
     return reviews
@@ -36,6 +39,12 @@ export function ReviewFilterGrid({ reviews }: ReviewFilterGridProps) {
         if (sortBy === "rating") {
           return b.rating - a.rating;
         }
+        if (sortBy === "release-newest") {
+          return parseReleaseDate(b.releaseDate) - parseReleaseDate(a.releaseDate);
+        }
+        if (sortBy === "release-oldest") {
+          return parseReleaseDate(a.releaseDate) - parseReleaseDate(b.releaseDate);
+        }
         return new Date(b.date).getTime() - new Date(a.date).getTime();
       });
   }, [reviews, selectedCategory, sortBy, searchQuery]);
@@ -44,18 +53,17 @@ export function ReviewFilterGrid({ reviews }: ReviewFilterGridProps) {
     <div className="space-y-8 my-12">
       {/* Filter and Control Bar */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-2xl glass-panel border border-white/10 bg-zinc-900/60">
-        
+
         {/* Category Filter Pills */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all cursor-pointer ${
-                selectedCategory === category
-                  ? "bg-red-600 text-white shadow-lg shadow-red-600/30 scale-102"
-                  : "bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white"
-              }`}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all cursor-pointer ${selectedCategory === category
+                ? "bg-red-600 text-white shadow-lg shadow-red-600/30 scale-102"
+                : "bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white"
+                }`}
             >
               {category === "All" ? "All Reviews" : category}
             </button>
@@ -81,10 +89,12 @@ export function ReviewFilterGrid({ reviews }: ReviewFilterGridProps) {
             <SlidersHorizontal className="w-3.5 h-3.5 text-zinc-400" />
             <select
               value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as "latest" | "rating")}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
               className="bg-transparent text-white focus:outline-none cursor-pointer text-xs"
             >
-              <option value="latest" className="bg-zinc-900 text-white">Latest Releases</option>
+              <option value="latest" className="bg-zinc-900 text-white">Latest Reviews</option>
+              <option value="release-newest" className="bg-zinc-900 text-white">Release Date (Newest)</option>
+              <option value="release-oldest" className="bg-zinc-900 text-white">Release Date (Oldest / Classic)</option>
               <option value="rating" className="bg-zinc-900 text-white">Highest Rated</option>
             </select>
           </div>

@@ -53,6 +53,11 @@ export function Footer() {
                   South Cinema
                 </Link>
               </li>
+              <li>
+                <Link href="/category/anime" className="hover:text-red-400 transition-colors">
+                  Anime Reviews
+                </Link>
+              </li>
             </ul>
           </div>
 
