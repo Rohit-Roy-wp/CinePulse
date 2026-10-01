@@ -19,6 +19,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
           src={review.backdrop || review.image}
           alt={`${review.title} poster`}
           fill
+          loading="eager"
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
