@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 interface AdSlotProps {
   type: "leaderboard" | "in-article" | "sidebar" | "banner";
@@ -16,8 +16,16 @@ export function AdSlot({
   className = "",
 }: AdSlotProps) {
   useEffect(() => {
-    // Only attempt to push ads if client ID is set and window.adsbygoogle is loaded
-    if (client && typeof window !== "undefined") {
+    // Only initialize for real ad slots (client and slot must be defined)
+    if (!client || typeof window === "undefined" || !slot) return;
+    // Global set to track which ad slots have been initialized
+    const globalSet = (window as any).__initializedAdSlots || new Set();
+    // Include ad type and slot in identifier so each distinct ad initializes once
+    const slotId = `${client}-${type}-${slot}`;
+    if (!globalSet.has(slotId)) {
+      // Mark as initialized before pushing to avoid race with double mount
+      globalSet.add(slotId);
+      (window as any).__initializedAdSlots = globalSet;
       try {
         const adsbygoogle = (window as unknown as { adsbygoogle: unknown[] }).adsbygoogle || [];
         adsbygoogle.push({});
@@ -25,7 +33,7 @@ export function AdSlot({
         console.error("AdSense initialization error:", e);
       }
     }
-  }, [client]);
+  }, [client, type, slot]);
 
   // Size styling configurations based on Google AdSense standard dimensions
   const typeConfig = {
