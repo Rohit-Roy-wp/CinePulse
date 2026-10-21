@@ -67,6 +67,11 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <head>
         <meta name="theme-color" content="#090a0f" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5989705913030838"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-screen flex flex-col bg-[#090a0f] text-[#f3f4f6] antialiased" suppressHydrationWarning>
         {/* Navigation Header with Search */}
