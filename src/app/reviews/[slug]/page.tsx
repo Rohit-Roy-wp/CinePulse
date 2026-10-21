@@ -31,12 +31,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!review) {
     return {
-      title: "Review Not Found | CinePulse",
+      title: "Review Not Found | The Cineverse",
     };
   }
 
   return {
-    title: `${review.title} - CinePulse Review`,
+    title: `${review.title} - The Cineverse Review`,
     description: review.description,
     keywords: [
       `${review.title.split(":")[0]} review`,
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ...review.genre,
     ],
     openGraph: {
-      title: `${review.title} | CinePulse Rating: ${review.rating}/5`,
+      title: `${review.title} | The Cineverse Rating: ${review.rating}/5`,
       description: review.description,
       type: "article",
       publishedTime: review.date,
@@ -222,7 +222,7 @@ export default async function ReviewDetailPage({ params }: PageProps) {
               <span>Independent Critique</span>
             </div>
             <p className="leading-relaxed">
-              CinePulse does not accept financial compensation for film ratings. Our reviews are crafted independently by passionate film journalists.
+              The Cineverse does not accept financial compensation for film ratings. Our reviews are crafted independently by passionate film journalists.
             </p>
           </div>
 

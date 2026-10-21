@@ -26,7 +26,7 @@ interface SocialShareProps {
 
 export function SocialShare({ title, slug }: SocialShareProps) {
   const [copied, setCopied] = useState(false);
-  const [currentUrl, setCurrentUrl] = useState(`https://cinepulse.blog/reviews/${slug}`);
+  const [currentUrl, setCurrentUrl] = useState(`https://thecineverse.in/reviews/${slug}`);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -34,7 +34,7 @@ export function SocialShare({ title, slug }: SocialShareProps) {
     }
   }, []);
   const encodedUrl = encodeURIComponent(currentUrl);
-  const encodedTitle = encodeURIComponent(`Read this review on CinePulse: "${title}"`);
+  const encodedTitle = encodeURIComponent(`Read this review on The Cineverse: "${title}"`);
 
   const shareLinks = {
     whatsapp: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`,

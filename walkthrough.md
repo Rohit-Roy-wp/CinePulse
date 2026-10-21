@@ -1,6 +1,6 @@
-# CinePulse — Project Walkthrough & Verification
+# The Cineverse — Project Walkthrough & Verification
 
-**CinePulse** is a high-performance, SEO-friendly, and Google AdSense-ready Movie Review & Entertainment platform built with **Next.js (App Router)**, **Tailwind CSS**, and zero-cost **MDX/Markdown** content architecture.
+**The Cineverse** is a high-performance, SEO-friendly, and Google AdSense-ready Movie Review & Entertainment platform built with **Next.js (App Router)**, **Tailwind CSS**, and zero-cost **MDX/Markdown** content architecture.
 
 ---
 
@@ -125,7 +125,7 @@ Verified JSON-LD on `http://localhost:3000/reviews/jawan`:
     "@type": "Movie",
     "name": "Jawan Movie Review",
     "director": { "@type": "Person", "name": "Atlee" },
-    "image": "https://cinepulse.blog/images/reviews/jawan.svg"
+    "image": "https://thecineverse.in/images/reviews/jawan.svg"
   }
 }
 ```

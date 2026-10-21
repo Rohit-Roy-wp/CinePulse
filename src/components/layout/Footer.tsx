@@ -15,11 +15,11 @@ export function Footer() {
                 <Film className="w-5 h-5" />
               </div>
               <span className="text-2xl font-black tracking-tight text-white">
-                CINE<span className="text-red-500">PULSE</span>
+                THE CINE<span className="text-red-500">VERSE</span>
               </span>
             </Link>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-sm">
-              CinePulse is India’s dedicated movie review portal and entertainment journal. We provide unapologetically honest critiques, star ratings, and industry insights across Bollywood, Hollywood, and OTT streaming platforms.
+              The Cineverse is India’s dedicated movie review portal and entertainment journal. We provide unapologetically honest critiques, star ratings, and industry insights across Bollywood, Hollywood, and OTT streaming platforms.
             </p>
             <div className="flex items-center gap-2 text-xs text-zinc-500 pt-2">
               <ShieldCheck className="w-4 h-4 text-emerald-500" />
@@ -113,7 +113,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/5">
           <div className="bg-zinc-900/60 rounded-xl p-4 border border-white/5 text-xs text-zinc-400 leading-relaxed space-y-2">
             <p>
-              <strong className="text-zinc-300">Strict Anti-Piracy Policy:</strong> CinePulse is strictly against digital piracy. We do not host, store, or provide download links or streaming URLs for copyrighted movies or series. We encourage our readers to watch films exclusively through licensed movie theatres and authorized OTT services (e.g. Netflix, Amazon Prime Video, Disney+ Hotstar, JioCinema).
+              <strong className="text-zinc-300">Strict Anti-Piracy Policy:</strong> The Cineverse is strictly against digital piracy. We do not host, store, or provide download links or streaming URLs for copyrighted movies or series. We encourage our readers to watch films exclusively through licensed movie theatres and authorized OTT services (e.g. Netflix, Amazon Prime Video, Disney+ Hotstar, JioCinema).
             </p>
             <p className="text-zinc-400">
               <strong>Fair Use Disclaimer:</strong> All movie posters, screenshots, and character likenesses displayed on this website are properties of their respective production studios and distributors, utilized solely for commentary, educational criticism, and editorial review purposes under the Fair Use doctrine.
@@ -121,7 +121,7 @@ export function Footer() {
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-400">
-            <p>© {new Date().getFullYear()} CinePulse Media. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} The Cineverse Media. All rights reserved.</p>
             <p className="flex items-center gap-1.5">
               Crafted with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" /> for cinema enthusiasts
             </p>

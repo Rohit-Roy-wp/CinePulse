@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   if (!category) {
     return {
-      title: "Category Not Found | CinePulse",
+      title: "Category Not Found | The Cineverse",
     };
   }
 
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     title: `${category.name} Movie Reviews & Ratings`,
     description: category.description,
     openGraph: {
-      title: `${category.name} Reviews | CinePulse`,
+      title: `${category.name} Reviews | The Cineverse`,
       description: category.description,
     },
   };

@@ -1,6 +1,6 @@
-# Implementation Plan - CinePulse: Movie Review & Entertainment Blog
+# Implementation Plan - The Cineverse: Movie Review & Entertainment Blog
 
-Build **CinePulse**, a production-grade, SEO-optimized, monetization-ready movie review and entertainment platform built with **Next.js (App Router)**, **Tailwind CSS**, and zero-cost **MDX/Markdown** content architecture.
+Build **The Cineverse**, a production-grade, SEO-optimized, monetization-ready movie review and entertainment platform built with **Next.js (App Router)**, **Tailwind CSS**, and zero-cost **MDX/Markdown** content architecture.
 
 ---
 
@@ -92,7 +92,7 @@ description: "An explosive action entertainer that balances mass commercial cine
 ### 3. UI Components & Design System
 
 #### [NEW] `src/components/layout/Navbar.tsx`
-- Logo with pulse glow effect ("CinePulse"), navigation links (Home, Bollywood, Hollywood, Web Series, Top Rated), search modal trigger, mobile responsive drawer.
+- Logo with pulse glow effect ("The Cineverse"), navigation links (Home, Bollywood, Hollywood, Web Series, Top Rated), search modal trigger, mobile responsive drawer.
 
 #### [NEW] `src/components/layout/Footer.tsx`
 - Rich footer with brand bio, category links, legal links (Privacy Policy, Terms, About, Contact), newsletter subscription, copyright notice, and DMCA / Fair Use disclaimer.
@@ -109,7 +109,7 @@ description: "An explosive action entertainer that balances mass commercial cine
 - GDPR & Google AdSense Consent Mode v2 compliant banner with Accept All, Essential Only, and storage in `localStorage`.
 
 #### [NEW] `src/components/reviews/QuickInfoBox.tsx`
-- Prominent review metadata box: Director, Cast pills, Release Date, Runtime, Category, OTT/Theatre platform, Star Rating with visual score bar, and CinePulse Verdict Badge.
+- Prominent review metadata box: Director, Cast pills, Release Date, Runtime, Category, OTT/Theatre platform, Star Rating with visual score bar, and The Cineverse Verdict Badge.
 
 #### [NEW] `src/components/reviews/ProsConsBox.tsx`
 - Side-by-side or stacked visual cards highlighting "What Works (The Good 👍)" and "What Doesn't (The Bad 👎)".

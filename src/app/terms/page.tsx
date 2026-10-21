@@ -4,9 +4,9 @@ import Link from "next/link";
 import { FileText, ShieldAlert, Copyright, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - CinePulse",
+  title: "Terms of Service - The Cineverse",
   description:
-    "CinePulse Terms of Service, Fair Use disclaimers, Intellectual Property guidelines, and DMCA takedown procedures.",
+    "The Cineverse Terms of Service, Fair Use disclaimers, Intellectual Property guidelines, and DMCA takedown procedures.",
 };
 
 export default function TermsPage() {
@@ -35,7 +35,7 @@ export default function TermsPage() {
             1. Agreement to Terms
           </h2>
           <p className="text-zinc-400">
-            By visiting or using CinePulse (<span className="text-white font-medium">https://cinepulse.blog</span>), you agree to comply with and be bound by these Terms of Service. If you disagree with any part of these terms, you are prohibited from utilizing our website or consuming our services.
+            By visiting or using The Cineverse (<span className="text-white font-medium">https://thecineverse.in</span>), you agree to comply with and be bound by these Terms of Service. If you disagree with any part of these terms, you are prohibited from utilizing our website or consuming our services.
           </p>
         </section>
 
@@ -45,7 +45,7 @@ export default function TermsPage() {
             2. Intellectual Property Rights & Content Ownership
           </h2>
           <p className="text-zinc-400">
-            All written critiques, star ratings, editorial analyses, layout designs, and original graphics published on CinePulse are the intellectual property of CinePulse Media, protected under applicable international copyright and trademark laws. You may not republish, scrape, copy, or redistribute our written content without explicit written consent.
+            All written critiques, star ratings, editorial analyses, layout designs, and original graphics published on The Cineverse are the intellectual property of The Cineverse Media, protected under applicable international copyright and trademark laws. You may not republish, scrape, copy, or redistribute our written content without explicit written consent.
           </p>
         </section>
 
@@ -56,10 +56,10 @@ export default function TermsPage() {
             3. Fair Use Doctrine & Movie Media Disclaimer
           </h2>
           <p className="text-zinc-400 text-sm">
-            All movie titles, promotional posters, character stills, trailer captures, and studio trademarks featured on CinePulse belong to their respective copyright holders, producers, and distribution entities.
+            All movie titles, promotional posters, character stills, trailer captures, and studio trademarks featured on The Cineverse belong to their respective copyright holders, producers, and distribution entities.
           </p>
           <p className="text-zinc-400 text-sm">
-            CinePulse displays these materials strictly under the <strong className="text-zinc-200">Fair Use Doctrine</strong> (U.S. Copyright Act Title 17 § 107 and Section 52 of the Indian Copyright Act, 1957) for the legitimate purposes of news reporting, public criticism, scholarship, and educational cinematic critique.
+            The Cineverse displays these materials strictly under the <strong className="text-zinc-200">Fair Use Doctrine</strong> (U.S. Copyright Act Title 17 § 107 and Section 52 of the Indian Copyright Act, 1957) for the legitimate purposes of news reporting, public criticism, scholarship, and educational cinematic critique.
           </p>
         </section>
 
@@ -69,10 +69,10 @@ export default function TermsPage() {
             4. Absolute Prohibition of Digital Piracy
           </h2>
           <p className="text-zinc-300 text-sm">
-            CinePulse operates under strict ethical guidelines. You acknowledge and agree that:
+            The Cineverse operates under strict ethical guidelines. You acknowledge and agree that:
           </p>
           <ul className="list-disc list-inside space-y-1.5 text-zinc-400 text-sm pl-2">
-            <li>CinePulse does not provide torrent links, direct download links, unauthorized video streams, or mirrors for any copyrighted cinema content.</li>
+            <li>The Cineverse does not provide torrent links, direct download links, unauthorized video streams, or mirrors for any copyrighted cinema content.</li>
             <li>Users are strictly forbidden from submitting comments, forum discussions, or emails requesting or distributing links to pirated films.</li>
             <li>We actively encourage all readers to support artists and creators by watching films in theatres or via licensed streaming providers (Netflix, Prime Video, Hotstar, etc.).</li>
           </ul>
@@ -81,14 +81,14 @@ export default function TermsPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-white">5. Editorial Disclaimers & Subjectivity</h2>
           <p className="text-zinc-400">
-            Film reviews and star ratings expressed on CinePulse represent the subjective artistic opinions of our editorial staff. They are intended for recreational commentary and reader guidance. CinePulse is not liable for any discrepancies between a viewer&apos;s personal enjoyment and our published critiques.
+            Film reviews and star ratings expressed on The Cineverse represent the subjective artistic opinions of our editorial staff. They are intended for recreational commentary and reader guidance. The Cineverse is not liable for any discrepancies between a viewer&apos;s personal enjoyment and our published critiques.
           </p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-white">6. DMCA Takedown & Copyright Notice</h2>
           <p className="text-zinc-400">
-            If you are a copyright owner or an agent thereof and believe that any content hosted on CinePulse infringes upon your copyrights, you may submit a formal notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Designated Agent with the following details in writing:
+            If you are a copyright owner or an agent thereof and believe that any content hosted on The Cineverse infringes upon your copyrights, you may submit a formal notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Designated Agent with the following details in writing:
           </p>
           <ul className="list-disc list-inside space-y-1 text-zinc-400 text-sm pl-2">
             <li>A physical or electronic signature of the authorized copyright holder.</li>

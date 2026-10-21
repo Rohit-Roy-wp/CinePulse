@@ -58,7 +58,7 @@ export function NewsletterBox() {
           <div className="p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 flex items-center justify-center gap-3 animate-fadeIn">
             <CheckCircle2 className="w-5 h-5 text-emerald-400" />
             <span className="text-sm font-semibold">
-              You&apos;re in! Welcome to the CinePulse community.
+              You&apos;re in! Welcome to The Cineverse community.
             </span>
           </div>
         ) : (

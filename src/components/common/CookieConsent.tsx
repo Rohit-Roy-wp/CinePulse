@@ -8,7 +8,7 @@ export function CookieConsent() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cinepulse_cookie_consent");
+    const consent = localStorage.getItem("thecineverse_cookie_consent");
     if (!consent) {
       // Small delay for smooth entry
       const timer = setTimeout(() => setIsVisible(true), 1200);
@@ -17,12 +17,12 @@ export function CookieConsent() {
   }, []);
 
   const handleAcceptAll = () => {
-    localStorage.setItem("cinepulse_cookie_consent", "all");
+    localStorage.setItem("thecineverse_cookie_consent", "all");
     setIsVisible(false);
   };
 
   const handleEssentialOnly = () => {
-    localStorage.setItem("cinepulse_cookie_consent", "essential");
+    localStorage.setItem("thecineverse_cookie_consent", "essential");
     setIsVisible(false);
   };
 

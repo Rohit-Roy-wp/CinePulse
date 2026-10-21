@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllReviews, getAllCategories } from "@/lib/reviews";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cinepulse.blog";
+  const baseUrl = "https://thecineverse.in";
   const reviews = getAllReviews();
   const categories = getAllCategories();
 

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Film, ShieldCheck, Award, Heart, Users, Star, Clapperboard, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us - CinePulse Movie Reviews & Editorial Mission",
+  title: "About Us - The Cineverse Movie Reviews & Editorial Mission",
   description:
-    "Learn about CinePulse, our independent film critique methodology, our star rating scale, and our commitment to authentic cinema journalism.",
+    "Learn about The Cineverse, our independent film critique methodology, our star rating scale, and our commitment to authentic cinema journalism.",
 };
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <header className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/20 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider">
           <Film className="w-3.5 h-3.5" />
-          <span>About CinePulse</span>
+          <span>About The Cineverse</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
           Passionate Cinema Journalism, <br />
@@ -25,7 +25,7 @@ export default function AboutPage() {
           </span>
         </h1>
         <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-          CinePulse was founded with a singular conviction: cinema lovers deserve insightful, spoiler-free, and fiercely independent film analysis free from promotional PR fluff.
+          The Cineverse was founded with a singular conviction: cinema lovers deserve insightful, spoiler-free, and fiercely independent film analysis free from promotional PR fluff.
         </p>
       </header>
 
@@ -187,7 +187,7 @@ export default function AboutPage() {
           Our Ethical Code
         </h3>
         <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-          CinePulse upholds the highest journalistic standards. We strictly advocate for legal movie consumption via authorized cinema theatres and licensed streaming platforms. We categorically oppose digital piracy and will never provide torrents, unauthorized download links, or infringed media on our site.
+          The Cineverse upholds the highest journalistic standards. We strictly advocate for legal movie consumption via authorized cinema theatres and licensed streaming platforms. We categorically oppose digital piracy and will never provide torrents, unauthorized download links, or infringed media on our site.
         </p>
         <div className="pt-2">
           <Link

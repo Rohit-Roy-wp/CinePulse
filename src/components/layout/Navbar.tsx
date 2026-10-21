@@ -23,7 +23,7 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-black tracking-tight text-white flex items-center gap-1 font-sans">
-                CINE<span className="text-red-500">PULSE</span>
+                THE CINE<span className="text-red-500">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-1">
                 Honest Film Reviews
@@ -157,7 +157,7 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-sm text-zinc-400 hover:text-white"
               >
-                About CinePulse
+                About The Cineverse
               </Link>
               <Link
                 href="/contact"

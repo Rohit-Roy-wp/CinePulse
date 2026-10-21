@@ -152,7 +152,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
         <div className="mt-12 p-6 sm:p-8 rounded-2xl glass-panel border border-white/10 bg-zinc-900/90">
           <h3 className="text-xl font-black text-white uppercase tracking-wider mb-6 flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
-            CinePulse Technical Breakdown
+            The Cineverse Technical Breakdown
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

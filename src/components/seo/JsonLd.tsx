@@ -24,11 +24,11 @@ export function JsonLd({ review }: JsonLdProps) {
     },
     publisher: {
       "@type": "Organization",
-      name: "CinePulse",
-      url: "https://cinepulse.blog",
+      name: "The Cineverse",
+      url: "https://thecineverse.in",
       logo: {
         "@type": "ImageObject",
-        url: "https://cinepulse.blog/images/logo.png",
+        url: "https://thecineverse.in/images/logo.png",
       },
     },
     reviewRating: {
@@ -49,7 +49,7 @@ export function JsonLd({ review }: JsonLdProps) {
         name: actorName,
       })),
       genre: review.genre,
-      image: `https://cinepulse.blog${review.image}`,
+      image: `https://thecineverse.in${review.image}`,
       datePublished: review.releaseDate,
     },
   };

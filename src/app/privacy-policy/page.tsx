@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ShieldCheck, Lock, Eye, FileText, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - CinePulse",
+  title: "Privacy Policy - The Cineverse",
   description:
-    "CinePulse Privacy Policy detailing data collection, cookie usage, Google AdSense compliance, and user rights.",
+    "The Cineverse Privacy Policy detailing data collection, cookie usage, Google AdSense compliance, and user rights.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -35,11 +35,11 @@ export default function PrivacyPolicyPage() {
             1. Introduction & Overview
           </h2>
           <p className="text-zinc-400">
-            Welcome to CinePulse (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), accessible via{" "}
-            <span className="text-white font-medium">https://cinepulse.blog</span>. We are deeply committed to protecting your personal data and your right to privacy. This Privacy Policy outlines how we collect, process, and safeguard information when you browse our film critiques, articles, and entertainment blogs.
+            Welcome to The Cineverse (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), accessible via{" "}
+            <span className="text-white font-medium">https://thecineverse.in</span>. We are deeply committed to protecting your personal data and your right to privacy. This Privacy Policy outlines how we collect, process, and safeguard information when you browse our film critiques, articles, and entertainment blogs.
           </p>
           <p className="text-zinc-400">
-            By accessing CinePulse, you signify your agreement to the terms outlined in this Privacy Policy. If you disagree with any segment of this policy, please discontinue use of the website immediately.
+            By accessing The Cineverse, you signify your agreement to the terms outlined in this Privacy Policy. If you disagree with any segment of this policy, please discontinue use of the website immediately.
           </p>
         </section>
 
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
           </h2>
           <div className="space-y-2 text-zinc-400">
             <p>
-              <strong className="text-white">Log Files:</strong> Like most standard web servers, CinePulse uses log files. These files log visitors when they visit websites. Information collected includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and number of clicks. These are not linked to personally identifiable information and are used solely to analyze trends, administer the site, and gather broad demographic data.
+              <strong className="text-white">Log Files:</strong> Like most standard web servers, The Cineverse uses log files. These files log visitors when they visit websites. Information collected includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and number of clicks. These are not linked to personally identifiable information and are used solely to analyze trends, administer the site, and gather broad demographic data.
             </p>
             <p>
               <strong className="text-white">Voluntary User Input:</strong> When you subscribe to our newsletter or submit our contact form, we collect your name, email address, and message content to deliver requested services and responses.
@@ -66,14 +66,14 @@ export default function PrivacyPolicyPage() {
           </h2>
           <div className="space-y-3 text-zinc-400 text-sm">
             <p>
-              CinePulse partners with third-party vendors, including <strong className="text-white">Google AdSense</strong>, to serve advertisements on our web pages. Please review the following crucial disclosures:
+              The Cineverse partners with third-party vendors, including <strong className="text-white">Google AdSense</strong>, to serve advertisements on our web pages. Please review the following crucial disclosures:
             </p>
             <ul className="list-disc list-inside space-y-2 pl-2">
               <li>
-                <strong className="text-zinc-200">DoubleClick DART Cookie:</strong> Google, as a third-party vendor, uses cookies to serve ads on CinePulse based on your prior visits to our site and other websites across the Internet.
+                <strong className="text-zinc-200">DoubleClick DART Cookie:</strong> Google, as a third-party vendor, uses cookies to serve ads on The Cineverse based on your prior visits to our site and other websites across the Internet.
               </li>
               <li>
-                Google&apos;s use of advertising cookies enables it and its partners to serve targeted ads based on your visit to CinePulse and/or other sites on the World Wide Web.
+                Google&apos;s use of advertising cookies enables it and its partners to serve targeted ads based on your visit to The Cineverse and/or other sites on the World Wide Web.
               </li>
               <li>
                 <strong className="text-zinc-200">Opting Out:</strong> You may opt out of personalized advertising by visiting Google&apos;s Ads Settings at{" "}
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
             4. Cookies & Web Beacons
           </h2>
           <p className="text-zinc-400">
-            CinePulse uses &quot;Cookies&quot; to store information regarding visitors&apos; preferences, and to record user-specific information on which pages the visitor accesses. The information is used to optimize user experience by customizing our web page content based on browser types and other analytics data.
+            The Cineverse uses &quot;Cookies&quot; to store information regarding visitors&apos; preferences, and to record user-specific information on which pages the visitor accesses. The information is used to optimize user experience by customizing our web page content based on browser types and other analytics data.
           </p>
           <p className="text-zinc-400">
             You can choose to disable cookies through your individual browser options. Detailed information about cookie management with specific web browsers can be found at the browsers&apos; respective official websites.
@@ -129,7 +129,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-white">6. Children&apos;s Information</h2>
           <p className="text-zinc-400">
-            Protecting children while using the internet is paramount to us. CinePulse does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will do our best efforts to promptly remove such records from our databases.
+            Protecting children while using the internet is paramount to us. The Cineverse does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will do our best efforts to promptly remove such records from our databases.
           </p>
         </section>
 

@@ -65,7 +65,7 @@ export function QuickInfoBox({ review }: QuickInfoBoxProps) {
             <div className="flex items-center gap-3">
               <Award className="w-6 h-6 text-amber-400" />
               <div>
-                <span className="text-xs text-zinc-400 block font-medium">Overall CinePulse Score</span>
+                <span className="text-xs text-zinc-400 block font-medium">Overall The Cineverse Score</span>
                 <RatingStars rating={review.rating} size="lg" />
               </div>
             </div>

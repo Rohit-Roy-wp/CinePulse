@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://cinepulse.blog/sitemap.xml",
+    sitemap: "https://thecineverse.in/sitemap.xml",
   };
 }

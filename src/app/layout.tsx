@@ -8,13 +8,13 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { getAllReviews } from "@/lib/reviews";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cinepulse.blog"),
+  metadataBase: new URL("https://thecineverse.in"),
   title: {
-    default: "CinePulse | Honest Movie Reviews, Ratings & Entertainment News",
-    template: "%s | CinePulse",
+    default: "The Cineverse | Honest Movie Reviews, Ratings & Entertainment News",
+    template: "%s | The Cineverse",
   },
   description:
-    "CinePulse delivers in-depth, authentic movie reviews, star ratings, box office analysis, and OTT series critiques across Bollywood, Hollywood, and Indian cinema.",
+    "The Cineverse delivers in-depth, authentic movie reviews, star ratings, box office analysis, and OTT series critiques across Bollywood, Hollywood, and Indian cinema.",
   keywords: [
     "movie reviews",
     "film review blog",
@@ -28,19 +28,19 @@ export const metadata: Metadata = {
     "Panchayat review",
     "OTT recommendations",
   ],
-  authors: [{ name: "CinePulse Editorial Team" }],
+  authors: [{ name: "The Cineverse Editorial Team" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://cinepulse.blog",
-    siteName: "CinePulse",
-    title: "CinePulse | Honest Movie Reviews, Ratings & Entertainment News",
+    url: "https://thecineverse.in",
+    siteName: "The Cineverse",
+    title: "The Cineverse | Honest Movie Reviews, Ratings & Entertainment News",
     description:
       "Your definitive portal for unfiltered movie reviews, star ratings, and cinema deep-dives.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CinePulse | Honest Movie Reviews & Entertainment News",
+    title: "The Cineverse | Honest Movie Reviews & Entertainment News",
     description: "Honest movie critiques, star ratings, and box office analysis.",
   },
   robots: {
