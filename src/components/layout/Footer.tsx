@@ -15,7 +15,7 @@ export function Footer() {
                 <Film className="w-5 h-5" />
               </div>
               <span className="text-2xl font-black tracking-tight text-white">
-                THE CINE<span className="text-red-500">VERSE</span>
+                CINE<span className="text-red-500"> VERSE</span>
               </span>
             </Link>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-sm">
