@@ -1,1 +1,33 @@
-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- App Icon Background -->
+  <rect x="45" y="45" width="422" height="422" rx="100" ry="100" fill="url(#bgGradient)" />
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF1A1A" />
+      <stop offset="100%" stop-color="#A6002E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Film Strip Container -->
+  <rect x="150" y="145" width="212" height="222" rx="35" ry="35" fill="#FFE5E5" />
+
+  <!-- Inner Film Frames -->
+  <rect x="210" y="175" width="96" height="75" rx="8" ry="8" fill="#C3002F" />
+  <rect x="210" y="265" width="96" height="75" rx="8" ry="8" fill="#C3002F" />
+
+  <!-- Left Sprocket Holes -->
+  <rect x="175" y="172" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="175" y="210" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="175" y="248" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="175" y="286" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="175" y="324" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+
+  <!-- Right Sprocket Holes -->
+  <rect x="318" y="172" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="318" y="210" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="318" y="248" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="318" y="286" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+  <rect x="318" y="324" width="20" height="20" rx="4" ry="4" fill="#C3002F" />
+</svg>
