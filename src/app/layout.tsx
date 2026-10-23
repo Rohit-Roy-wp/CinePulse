@@ -43,6 +43,16 @@ export const metadata: Metadata = {
     title: "The Cineverse | Honest Movie Reviews & Entertainment News",
     description: "Honest movie critiques, star ratings, and box office analysis.",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png", sizes: "180x180" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   robots: {
     index: true,
     follow: true,
