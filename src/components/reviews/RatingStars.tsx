@@ -17,9 +17,9 @@ export function RatingStars({
   className = "",
 }: RatingStarsProps) {
   const sizeClasses = {
-    sm: "w-3.5 h-3.5",
-    md: "w-5 h-5",
-    lg: "w-6 h-6",
+    sm: "w-3 h-3 sm:w-3.5 sm:h-3.5",
+    md: "w-3.5 h-3.5 sm:w-5 sm:h-5",
+    lg: "w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6",
   }[size];
 
   const safeRating = typeof rating === "number" && !isNaN(rating) ? rating : 0;
@@ -28,8 +28,8 @@ export function RatingStars({
   const emptyStars = Math.max(0, maxRating - fullStars - (hasHalfStar ? 1 : 0));
 
   return (
-    <div className={`flex items-center gap-1.5 ${className}`}>
-      <div className="flex items-center text-amber-400">
+    <div className={`flex flex-wrap items-center gap-1.5 sm:gap-2 ${className}`}>
+      <div className="flex items-center text-amber-400 shrink-0">
         {/* Full Stars */}
         {Array.from({ length: fullStars }).map((_, i) => (
           <Star key={`full-${i}`} className={`${sizeClasses} fill-amber-400 text-amber-400`} />
@@ -48,8 +48,13 @@ export function RatingStars({
 
       {showNumber && (
         <span
-          className={`font-black tracking-tight text-amber-400 ${size === "sm" ? "text-xs" : size === "lg" ? "text-lg" : "text-sm"
-            }`}
+          className={`font-black tracking-tight text-amber-400 shrink-0 ${
+            size === "sm"
+              ? "text-xs"
+              : size === "lg"
+              ? "text-sm sm:text-base md:text-lg"
+              : "text-xs sm:text-sm"
+          }`}
         >
           {safeRating.toFixed(1)}
           <span className="text-zinc-500 font-normal text-[0.85em]">/{maxRating}</span>

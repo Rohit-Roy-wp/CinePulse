@@ -61,17 +61,17 @@ export function QuickInfoBox({ review }: QuickInfoBoxProps) {
           </div>
 
           {/* Rating Meter */}
-          <div className="p-4 rounded-xl bg-zinc-900/80 border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <Award className="w-6 h-6 text-amber-400" />
-              <div>
-                <span className="text-xs text-zinc-400 block font-medium">Overall The Cineverse Score</span>
+          <div className="p-3.5 sm:p-4 rounded-xl bg-zinc-900/80 border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 overflow-hidden">
+            <div className="flex items-start sm:items-center gap-3 min-w-0">
+              <Award className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 shrink-0 mt-0.5 sm:mt-0" />
+              <div className="min-w-0 space-y-1">
+                <span className="text-[11px] sm:text-xs text-zinc-400 block font-medium">Overall The Cineverse Score</span>
                 <RatingStars rating={review.rating} maxRating={10} size="lg" />
               </div>
             </div>
-            <div className="text-xs sm:text-right text-zinc-400">
-              <span className="text-emerald-400 font-semibold">Verified Critic Review</span>
-              <p>Based on direction, story, and acting</p>
+            <div className="text-[11px] sm:text-xs sm:text-right text-zinc-400 shrink-0 pt-1 sm:pt-0 border-t border-white/5 sm:border-t-0">
+              <span className="text-emerald-400 font-semibold block">Verified Critic Review</span>
+              <p className="text-zinc-500">Based on direction, story, and acting</p>
             </div>
           </div>
 
