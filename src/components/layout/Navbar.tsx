@@ -32,72 +32,72 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-2">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
             <Link
               href="/"
-              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap"
             >
               Home
             </Link>
             <Link
               href="/category/bollywood"
-              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap"
             >
-              <Clapperboard className="w-4 h-4 text-red-500" />
+              <Clapperboard className="w-4 h-4 text-red-500 shrink-0" />
               Bollywood
             </Link>
             <Link
               href="/category/hollywood"
-              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap"
             >
               Hollywood
             </Link>
             <Link
               href="/category/web-series"
-              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap"
             >
-              <Flame className="w-4 h-4 text-amber-500" />
+              <Flame className="w-4 h-4 text-amber-500 shrink-0" />
               Web Series
             </Link>
             <Link
               href="/category/south-cinema"
-              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap"
             >
               South Cinema
             </Link>
             <Link
               href="/category/anime"
-              className="px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap"
             >
-              <Sparkles className="w-4 h-4 text-violet-500" />
+              <Sparkles className="w-4 h-4 text-violet-500 shrink-0" />
               Anime
             </Link>
           </nav>
 
           {/* Action Buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             {onSearchOpen && (
               <button
                 onClick={onSearchOpen}
-                className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-zinc-800/80 hover:bg-zinc-700/80 text-zinc-300 hover:text-white border border-white/10 text-xs sm:text-sm font-medium transition-all"
+                className="flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-zinc-800/80 hover:bg-zinc-700/80 text-zinc-300 hover:text-white border border-white/10 text-xs sm:text-sm font-medium transition-all"
                 title="Search reviews"
               >
                 <Search className="w-4 h-4 text-zinc-400" />
-                <span className="hidden sm:inline">Search movies...</span>
+                <span className="hidden xl:inline">Search movies...</span>
               </button>
             )}
 
             <Link
               href="/about"
-              className="hidden lg:inline-flex items-center px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold shadow-md shadow-red-600/20 transition-all hover:scale-102"
+              className="hidden xl:inline-flex items-center px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold shadow-md shadow-red-600/20 transition-all hover:scale-102 whitespace-nowrap"
             >
               Our Verdicts
             </Link>
 
-            {/* Mobile Menu Toggle Button */}
+            {/* Mobile/Tablet Menu Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5"
+              className="lg:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -106,9 +106,9 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
 
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile/Tablet Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/10 space-y-1 animate-fadeIn">
+          <div className="lg:hidden py-4 border-t border-white/10 space-y-1 animate-fadeIn">
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}

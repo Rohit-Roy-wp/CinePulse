@@ -25,9 +25,9 @@ export function QuickInfoBox({ review }: QuickInfoBoxProps) {
       {/* Ambient background glow */}
       <div className="absolute -top-24 -right-24 w-72 h-72 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
+      <div className="flex flex-col sm:flex-row gap-6 lg:gap-8 items-start">
         {/* Poster Thumbnail */}
-        <div className="relative w-full sm:w-48 lg:w-56 aspect-[2/3] shrink-0 rounded-xl overflow-hidden border border-white/10 shadow-lg group">
+        <div className="relative w-full sm:w-48 lg:w-56 aspect-[2/3] shrink-0 rounded-xl overflow-hidden border border-white/10 shadow-lg group mx-auto sm:mx-0 max-w-[280px] sm:max-w-none">
           <Image
             src={review.image}
             alt={`${review.title} poster`}
