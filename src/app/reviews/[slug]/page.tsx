@@ -112,7 +112,7 @@ export default async function ReviewDetailPage({ params }: PageProps) {
             {review.category}
           </Link>
           <span className="px-3 py-1 rounded-full bg-zinc-800 text-amber-400 border border-amber-500/20 text-xs font-bold">
-            ★ {review.rating} / 5.0
+            ★ {review.rating} / 10.0
           </span>
           <span className="px-3 py-1 rounded-full bg-white/5 text-zinc-300 text-xs font-medium">
             {review.verdict}
@@ -153,10 +153,10 @@ export default async function ReviewDetailPage({ params }: PageProps) {
 
       {/* Main Layout Grid: Content + Sticky Sidebar */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-        
+
         {/* Left Column: Full Review Content (8 cols) */}
         <div className="lg:col-span-8 space-y-8">
-          
+
           {/* Quick Info Box */}
           <QuickInfoBox review={review} />
 
@@ -178,7 +178,7 @@ export default async function ReviewDetailPage({ params }: PageProps) {
 
         {/* Right Column: Sticky Sidebar with Monetization (4 cols) */}
         <aside className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
-          
+
           {/* Sticky Sidebar Google AdSense Slot */}
           <div className="glass-panel rounded-2xl p-4 border border-white/10 text-center">
             <AdSlot type="sidebar" />
@@ -190,7 +190,7 @@ export default async function ReviewDetailPage({ params }: PageProps) {
               <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
               Verdict at a Glance
             </h4>
-            
+
             <div className="p-4 rounded-xl bg-zinc-900 border border-white/5 space-y-2">
               <div className="flex justify-between items-center text-xs">
                 <span className="text-zinc-400">Movie</span>
@@ -198,7 +198,7 @@ export default async function ReviewDetailPage({ params }: PageProps) {
               </div>
               <div className="flex justify-between items-center text-xs">
                 <span className="text-zinc-400">Score</span>
-                <span className="text-amber-400 font-black">{review.rating} / 5.0</span>
+                <span className="text-amber-400 font-black">{review.rating} / 10.0</span>
               </div>
               <div className="flex justify-between items-center text-xs">
                 <span className="text-zinc-400">Verdict</span>

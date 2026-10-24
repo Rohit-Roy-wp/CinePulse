@@ -66,7 +66,7 @@ export function QuickInfoBox({ review }: QuickInfoBoxProps) {
               <Award className="w-6 h-6 text-amber-400" />
               <div>
                 <span className="text-xs text-zinc-400 block font-medium">Overall The Cineverse Score</span>
-                <RatingStars rating={review.rating} size="lg" />
+                <RatingStars rating={review.rating} maxRating={10} size="lg" />
               </div>
             </div>
             <div className="text-xs sm:text-right text-zinc-400">

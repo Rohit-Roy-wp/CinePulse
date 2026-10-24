@@ -11,18 +11,22 @@ interface ReviewCardProps {
 }
 
 export function ReviewCard({ review }: ReviewCardProps) {
+  const imageSrc = (review.backdrop && review.backdrop.trim()) || (review.image && review.image.trim()) || null;
+
   return (
     <article className="group glass-panel rounded-2xl overflow-hidden flex flex-col border border-white/10 hover:border-red-500/40 hover:shadow-2xl hover:shadow-red-950/30 transition-all duration-300">
       {/* Poster Image Container */}
       <Link href={`/reviews/${review.slug}`} className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden block bg-zinc-900">
-        <Image
-          src={review.backdrop || review.image}
-          alt={`${review.title} poster`}
-          fill
-          loading="eager"
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        {imageSrc && (
+          <Image
+            src={imageSrc}
+            alt={`${review.title} poster`}
+            fill
+            loading="eager"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f] via-transparent to-black/30" />
 
         {/* Top Badges */}
@@ -31,7 +35,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
             {review.category}
           </span>
           <div className="px-2.5 py-1 rounded-md bg-zinc-950/80 backdrop-blur-md border border-amber-500/30">
-            <RatingStars rating={review.rating} size="sm" />
+            <RatingStars rating={review.rating} maxRating={10} size="sm" />
           </div>
         </div>
 

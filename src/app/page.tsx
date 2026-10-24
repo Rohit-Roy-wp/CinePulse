@@ -65,7 +65,7 @@ export default function HomePage() {
               {/* Star Rating & Quick Specs */}
               <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-zinc-300">
                 <div className="p-2 rounded-xl bg-black/70 backdrop-blur-md border border-amber-500/20">
-                  <RatingStars rating={heroReview.rating} size="md" />
+                  <RatingStars rating={heroReview.rating} maxRating={10} size="md" />
                 </div>
                 <span>Dir: <strong className="text-white">{heroReview.director}</strong></span>
                 <span>•</span>

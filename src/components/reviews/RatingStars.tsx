@@ -11,7 +11,7 @@ interface RatingStarsProps {
 
 export function RatingStars({
   rating,
-  maxRating = 5,
+  maxRating = 10,
   size = "md",
   showNumber = true,
   className = "",
@@ -22,8 +22,9 @@ export function RatingStars({
     lg: "w-6 h-6",
   }[size];
 
-  const fullStars = Math.floor(rating);
-  const hasHalfStar = rating % 1 >= 0.25 && rating % 1 <= 0.75;
+  const safeRating = typeof rating === "number" && !isNaN(rating) ? rating : 0;
+  const fullStars = Math.floor(safeRating);
+  const hasHalfStar = safeRating % 1 >= 0.25 && safeRating % 1 <= 0.75;
   const emptyStars = Math.max(0, maxRating - fullStars - (hasHalfStar ? 1 : 0));
 
   return (
@@ -47,11 +48,10 @@ export function RatingStars({
 
       {showNumber && (
         <span
-          className={`font-black tracking-tight text-amber-400 ${
-            size === "sm" ? "text-xs" : size === "lg" ? "text-lg" : "text-sm"
-          }`}
+          className={`font-black tracking-tight text-amber-400 ${size === "sm" ? "text-xs" : size === "lg" ? "text-lg" : "text-sm"
+            }`}
         >
-          {rating.toFixed(1)}
+          {safeRating.toFixed(1)}
           <span className="text-zinc-500 font-normal text-[0.85em]">/{maxRating}</span>
         </span>
       )}

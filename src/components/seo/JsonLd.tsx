@@ -34,7 +34,7 @@ export function JsonLd({ review }: JsonLdProps) {
     reviewRating: {
       "@type": "Rating",
       ratingValue: review.rating,
-      bestRating: 5,
+      bestRating: 10,
       worstRating: 1,
     },
     itemReviewed: {

@@ -6,7 +6,7 @@ import { Film, ShieldCheck, Award, Heart, Users, Star, Clapperboard, CheckCircle
 export const metadata: Metadata = {
   title: "About Us - The Cineverse Movie Reviews & Editorial Mission",
   description:
-    "Learn about The Cineverse, our independent film critique methodology, our star rating scale, and our commitment to authentic cinema journalism.",
+    "Learn about The Cineverse, our independent film critique methodology, our 10-point rating scale, and our commitment to authentic cinema journalism.",
 };
 
 export default function AboutPage() {
@@ -70,10 +70,10 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className="text-2xl font-black text-white tracking-tight">
-              Our 5-Star Rating Metric
+              Our 10-Point Rating Metric
             </h2>
             <p className="text-xs sm:text-sm text-zinc-400">
-              How we evaluate films, web series, and theatrical releases
+              How we evaluate films, web series, and theatrical releases on a 10-point scale
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-white/5 space-y-1">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-amber-400">4.5 – 5.0 Stars</span>
+              <span className="font-bold text-amber-400">9.0 – 10.0 Stars</span>
               <span className="text-xs font-semibold px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">
                 Masterpiece / All-Time Must Watch
               </span>
@@ -93,7 +93,7 @@ export default function AboutPage() {
 
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-white/5 space-y-1">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-amber-400">3.5 – 4.0 Stars</span>
+              <span className="font-bold text-amber-400">7.0 – 8.9 Stars</span>
               <span className="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">
                 Blockbuster / Highly Recommended
               </span>
@@ -105,7 +105,7 @@ export default function AboutPage() {
 
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-white/5 space-y-1">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-amber-400">2.5 – 3.0 Stars</span>
+              <span className="font-bold text-amber-400">5.0 – 6.9 Stars</span>
               <span className="text-xs font-semibold px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800">
                 One-Time Watch / Decent
               </span>
@@ -117,7 +117,7 @@ export default function AboutPage() {
 
           <div className="p-4 rounded-xl bg-zinc-900/80 border border-white/5 space-y-1">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-amber-400">Under 2.5 Stars</span>
+              <span className="font-bold text-amber-400">Under 5.0 Stars</span>
               <span className="text-xs font-semibold px-2 py-0.5 rounded bg-rose-950 text-rose-300 border border-rose-800">
                 Below Average / Skip
               </span>
