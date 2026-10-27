@@ -74,7 +74,7 @@ export default function RootLayout({
   const reviews = getAllReviews();
 
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#090a0f" />
         <script
@@ -88,12 +88,12 @@ export default function RootLayout({
         <SiteHeader reviews={reviews} />
 
         {/* Global Leaderboard Ad Slot (Directly below Header) */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4">
+        <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 w-full pt-4">
           <AdSlot type="leaderboard" />
         </div>
 
         {/* Main Content Area */}
-        <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-6">
+        <main className="flex-1 max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12 w-full py-6">
           {children}
         </main>
 

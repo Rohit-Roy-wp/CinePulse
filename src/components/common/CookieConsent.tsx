@@ -52,8 +52,10 @@ export function CookieConsent() {
             </p>
           </div>
           <button
+            type="button"
+            suppressHydrationWarning
             onClick={handleEssentialOnly}
-            className="text-zinc-500 hover:text-zinc-300 p-1"
+            className="text-zinc-500 hover:text-zinc-300 p-1 cursor-pointer"
             aria-label="Dismiss cookie banner"
           >
             <X className="w-4 h-4" />
@@ -62,14 +64,18 @@ export function CookieConsent() {
 
         <div className="mt-4 flex items-center gap-2">
           <button
+            type="button"
+            suppressHydrationWarning
             onClick={handleAcceptAll}
-            className="flex-1 py-2 px-3 text-xs font-semibold rounded-xl bg-red-600 hover:bg-red-500 text-white transition-colors"
+            className="flex-1 py-2 px-3 text-xs font-semibold rounded-xl bg-red-600 hover:bg-red-500 text-white transition-colors cursor-pointer"
           >
             Accept All
           </button>
           <button
+            type="button"
+            suppressHydrationWarning
             onClick={handleEssentialOnly}
-            className="py-2 px-3 text-xs font-medium rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors border border-white/10"
+            className="py-2 px-3 text-xs font-medium rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors border border-white/10 cursor-pointer"
           >
             Essential Only
           </button>

@@ -67,7 +67,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
       renderedElements.push(
         <h2
           key={`h2-${index}`}
-          className="text-2xl sm:text-3xl font-extrabold text-white mt-10 mb-4 tracking-tight border-l-4 border-red-600 pl-4"
+          className="text-2xl sm:text-3xl font-bold text-white mt-10 mb-4 tracking-tight pb-2 border-b border-zinc-800"
         >
           {line.replace("## ", "")}
         </h2>
@@ -91,7 +91,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
     if (line.startsWith("---")) {
       flushList(`flush-${index}`);
       renderedElements.push(
-        <hr key={`hr-${index}`} className="border-white/10 my-8" />
+        <hr key={`hr-${index}`} className="border-zinc-800 my-8" />
       );
       return;
     }
@@ -101,7 +101,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
       renderedElements.push(
         <blockquote
           key={`quote-${index}`}
-          className="p-4 my-6 rounded-r-xl border-l-4 border-amber-500 bg-amber-500/10 text-amber-200 italic font-medium"
+          className="pl-4 my-6 border-l-2 border-zinc-600 text-zinc-300 italic font-medium"
         >
           {line.replace("> ", "")}
         </blockquote>
@@ -163,7 +163,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
               </div>
               <div className="h-2 rounded-full bg-zinc-800 overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-red-600 to-amber-500 rounded-full"
+                  className="h-full bg-red-600 rounded-full"
                   style={{ width: `${review.scoreBreakdown.story * 10}%` }}
                 />
               </div>
@@ -176,7 +176,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
               </div>
               <div className="h-2 rounded-full bg-zinc-800 overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-red-600 to-amber-500 rounded-full"
+                  className="h-full bg-red-600 rounded-full"
                   style={{ width: `${review.scoreBreakdown.acting * 10}%` }}
                 />
               </div>
@@ -189,7 +189,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
               </div>
               <div className="h-2 rounded-full bg-zinc-800 overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-red-600 to-amber-500 rounded-full"
+                  className="h-full bg-red-600 rounded-full"
                   style={{ width: `${review.scoreBreakdown.direction * 10}%` }}
                 />
               </div>
@@ -202,7 +202,7 @@ export function ReviewContent({ review }: ReviewContentProps) {
               </div>
               <div className="h-2 rounded-full bg-zinc-800 overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-red-600 to-amber-500 rounded-full"
+                  className="h-full bg-red-600 rounded-full"
                   style={{ width: `${review.scoreBreakdown.musicVfx * 10}%` }}
                 />
               </div>

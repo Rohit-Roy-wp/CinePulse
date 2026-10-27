@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Film, Search, Menu, X, Clapperboard, Flame, Sparkles } from "lucide-react";
+import { Film, Search, Menu, X, Clapperboard, Flame, Tv } from "lucide-react";
 
 interface NavbarProps {
   onSearchOpen?: () => void;
@@ -13,13 +13,13 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
 
   return (
     <header className="sticky top-0 z-50 glass-nav">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12">
         <div className="flex items-center justify-between h-20">
 
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-red-600 to-rose-800 flex items-center justify-center text-white shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform duration-200">
-              <Film className="w-6 h-6 animate-pulse" />
+            <div className="w-11 h-11 rounded-xl bg-red-600 flex items-center justify-center text-white">
+              <Film className="w-6 h-6" />
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-black tracking-tight text-white flex items-center gap-1 font-sans">
@@ -69,7 +69,7 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
               href="/category/anime"
               className="px-3 xl:px-3.5 py-2 text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap"
             >
-              <Sparkles className="w-4 h-4 text-violet-500 shrink-0" />
+              <Tv className="w-4 h-4 text-zinc-400 shrink-0" />
               Anime
             </Link>
           </nav>
@@ -78,8 +78,10 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
           <div className="flex items-center gap-2 sm:gap-3">
             {onSearchOpen && (
               <button
+                type="button"
                 onClick={onSearchOpen}
-                className="flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-zinc-800/80 hover:bg-zinc-700/80 text-zinc-300 hover:text-white border border-white/10 text-xs sm:text-sm font-medium transition-all"
+                suppressHydrationWarning
+                className="flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 text-xs sm:text-sm font-medium transition-colors cursor-pointer"
                 title="Search reviews"
               >
                 <Search className="w-4 h-4 text-zinc-400" />
@@ -89,15 +91,17 @@ export function Navbar({ onSearchOpen }: NavbarProps) {
 
             <Link
               href="/about"
-              className="hidden xl:inline-flex items-center px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold shadow-md shadow-red-600/20 transition-all hover:scale-102 whitespace-nowrap"
+              className="hidden xl:inline-flex items-center px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap"
             >
               Our Verdicts
             </Link>
 
             {/* Mobile/Tablet Menu Toggle Button */}
             <button
+              type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5"
+              suppressHydrationWarning
+              className="lg:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 cursor-pointer"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

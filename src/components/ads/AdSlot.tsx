@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 interface AdSlotProps {
   type: "leaderboard" | "in-article" | "sidebar" | "banner";
@@ -9,6 +9,9 @@ interface AdSlotProps {
   className?: string;
 }
 
+// Ads toggle: Set to true when Google AdSense account is approved and live
+const ENABLE_ADS = false;
+
 export function AdSlot({
   type,
   client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID,
@@ -16,14 +19,11 @@ export function AdSlot({
   className = "",
 }: AdSlotProps) {
   useEffect(() => {
-    // Only initialize for real ad slots (client and slot must be defined)
-    if (!client || typeof window === "undefined" || !slot) return;
-    // Global set to track which ad slots have been initialized
+    // Only initialize if ads are enabled, client is defined, and running in browser
+    if (!ENABLE_ADS || !client || typeof window === "undefined") return;
     const globalSet = (window as any).__initializedAdSlots || new Set();
-    // Include ad type and slot in identifier so each distinct ad initializes once
-    const slotId = `${client}-${type}-${slot}`;
+    const slotId = `${client}-${type}-${slot || "auto"}`;
     if (!globalSet.has(slotId)) {
-      // Mark as initialized before pushing to avoid race with double mount
       globalSet.add(slotId);
       (window as any).__initializedAdSlots = globalSet;
       try {
@@ -35,69 +35,53 @@ export function AdSlot({
     }
   }, [client, type, slot]);
 
+  // If ads are disabled/commented out, hide completely without leaving empty spaces
+  if (!ENABLE_ADS) {
+    return null;
+  }
+
   // Size styling configurations based on Google AdSense standard dimensions
   const typeConfig = {
     leaderboard: {
-      label: "Responsive Leaderboard Ad (728x90 / 320x50)",
-      containerClass: "w-full max-w-[728px] h-[90px] mx-auto",
+      containerClass: "w-full max-w-[728px] min-h-[90px] mx-auto",
       format: "horizontal",
     },
     "in-article": {
-      label: "In-Article Native Ad Slot",
       containerClass: "w-full min-h-[140px] my-8",
       format: "fluid",
     },
     sidebar: {
-      label: "Sticky Display Ad (300x250 / 300x600)",
       containerClass: "w-[300px] min-h-[250px] mx-auto",
       format: "rectangle",
     },
     banner: {
-      label: "Responsive Display Ad",
-      containerClass: "w-full min-h-[100px]",
+      containerClass: "w-full min-h-[90px]",
       format: "auto",
     },
   }[type];
 
-  // If real client is provided, render the official AdSense script tag
-  if (client && slot) {
+  // If client is present, render the official AdSense unit
+  if (client) {
     return (
-      <div className={`my-6 text-center ${className}`}>
-        <span className="block text-[10px] uppercase tracking-widest text-zinc-400 font-semibold mb-1">
+      <aside
+        aria-label="Advertisement"
+        className={`my-6 text-center ${typeConfig.containerClass} ${className}`}
+      >
+        <span className="block text-[10px] uppercase tracking-widest text-zinc-500 font-medium mb-1">
           Advertisement
         </span>
         <ins
           className="adsbygoogle"
           style={{ display: "block" }}
           data-ad-client={client}
-          data-ad-slot={slot}
+          {...(slot ? { "data-ad-slot": slot } : {})}
           data-ad-format={typeConfig.format}
           data-full-width-responsive="true"
         />
-      </div>
+      </aside>
     );
   }
 
-  // Otherwise, render a high-quality demonstration placeholder that conforms to AdSense placement rules
-  return (
-    <aside
-      aria-label="Advertisement"
-      className={`my-6 mx-auto ${typeConfig.containerClass} ${className}`}
-    >
-      <div className="relative w-full h-full bg-zinc-900/80 border border-dashed border-white/15 rounded-xl p-3 flex flex-col items-center justify-center text-center overflow-hidden group hover:border-red-500/30 transition-colors">
-        <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-1">
-          Advertisement
-        </span>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-          <span className="text-xs font-semibold text-zinc-400">
-            {typeConfig.label}
-          </span>
-        </div>
-        <p className="text-[11px] text-zinc-400 mt-1 max-w-xs">
-          Google AdSense Ready • Automatic sizing for mobile & desktop
-        </p>
-      </div>
-    </aside>
-  );
+  return null;
 }
+

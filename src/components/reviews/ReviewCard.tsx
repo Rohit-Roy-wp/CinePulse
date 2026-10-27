@@ -14,16 +14,16 @@ export function ReviewCard({ review }: ReviewCardProps) {
   const imageSrc = (review.backdrop && review.backdrop.trim()) || (review.image && review.image.trim()) || null;
 
   return (
-    <article className="group glass-panel rounded-2xl overflow-hidden flex flex-col border border-white/10 hover:border-red-500/40 hover:shadow-2xl hover:shadow-red-950/30 transition-all duration-300">
+    <article className="group rounded-xl overflow-hidden flex flex-col border border-zinc-800 bg-zinc-900 hover:border-zinc-700 transition-colors">
       {/* Poster Image Container */}
-      <Link href={`/reviews/${review.slug}`} className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden block bg-zinc-900">
+      <Link href={`/reviews/${review.slug}`} className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden block bg-zinc-950">
         {imageSrc && (
           <Image
             src={imageSrc}
             alt={`${review.title} poster`}
             fill
             loading="eager"
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            className="object-cover transition-opacity duration-300"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         )}
@@ -31,17 +31,17 @@ export function ReviewCard({ review }: ReviewCardProps) {
 
         {/* Top Badges */}
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-          <span className="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-white border border-white/10">
+          <span className="px-2.5 py-1 rounded-md bg-zinc-950/90 text-[11px] font-bold uppercase tracking-wider text-white border border-zinc-700">
             {review.category}
           </span>
-          <div className="px-2.5 py-1 rounded-md bg-zinc-950/80 backdrop-blur-md border border-amber-500/30">
+          <div className="px-2.5 py-1 rounded-md bg-zinc-950/90 border border-zinc-700">
             <RatingStars rating={review.rating} maxRating={10} size="sm" />
           </div>
         </div>
 
         {/* Bottom Platform Tag */}
         <div className="absolute bottom-3 left-3">
-          <span className="text-[11px] font-medium text-zinc-300 bg-black/60 backdrop-blur-sm px-2 py-0.5 rounded border border-white/5">
+          <span className="text-[11px] font-medium text-zinc-300 bg-zinc-950/90 px-2 py-0.5 rounded border border-zinc-800">
             {review.platform}
           </span>
         </div>
@@ -75,15 +75,15 @@ export function ReviewCard({ review }: ReviewCardProps) {
         </div>
 
         {/* Card Footer: Director & Read More */}
-        <div className="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+        <div className="pt-4 border-t border-zinc-800/80 flex items-center justify-between text-xs">
           <span className="text-zinc-400 font-medium">
             Dir: <strong className="text-zinc-200">{review.director}</strong>
           </span>
           <Link
             href={`/reviews/${review.slug}`}
-            className="font-semibold text-red-500 group-hover:text-red-400 flex items-center gap-1 group-hover:translate-x-0.5 transition-all"
+            className="font-semibold text-red-500 group-hover:text-red-400 transition-colors"
           >
-            Read Review →
+            Read Review
           </Link>
         </div>
       </div>

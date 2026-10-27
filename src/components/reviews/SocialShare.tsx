@@ -98,8 +98,10 @@ export function SocialShare({ title, slug }: SocialShareProps) {
 
         {/* Copy Link Button */}
         <button
+          type="button"
+          suppressHydrationWarning
           onClick={handleCopy}
-          className="p-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 border border-white/10 transition-all flex items-center gap-1.5 text-xs font-semibold relative"
+          className="p-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-200 border border-white/10 transition-colors flex items-center gap-1.5 text-xs font-semibold relative cursor-pointer"
           title="Copy review link"
         >
           {copied ? (

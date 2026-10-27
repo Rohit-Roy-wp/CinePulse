@@ -69,7 +69,7 @@ export default function ContactPage() {
 
         {/* Contact Information & Channels (5 cols) */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6">
+          <div className="bg-zinc-900 p-6 sm:p-8 rounded-2xl border border-zinc-800 space-y-6">
             <h3 className="text-xl font-bold text-white tracking-tight">
               Direct Communication Channels
             </h3>
@@ -162,6 +162,8 @@ export default function ContactPage() {
                   Thank you for contacting The Cineverse. Our editorial team will review your message and reply as soon as possible.
                 </p>
                 <button
+                  type="button"
+                  suppressHydrationWarning
                   onClick={() => {
                     setSubmitted(false);
                     setFormData({
@@ -171,13 +173,13 @@ export default function ContactPage() {
                       message: "",
                     });
                   }}
-                  className="mt-4 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-semibold transition-colors"
+                  className="mt-4 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-semibold transition-colors cursor-pointer"
                 >
                   Send Another Message
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} suppressHydrationWarning className="space-y-5">
                 <h3 className="text-xl font-bold text-white tracking-tight mb-2">
                   Send Us an Electronic Dispatch
                 </h3>
@@ -193,6 +195,7 @@ export default function ContactPage() {
                       placeholder="e.g. Rahul Sharma"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      suppressHydrationWarning
                       className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-red-500 transition-colors"
                     />
                   </div>
@@ -207,6 +210,7 @@ export default function ContactPage() {
                       placeholder="e.g. rahul@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      suppressHydrationWarning
                       className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-red-500 transition-colors"
                     />
                   </div>
@@ -219,6 +223,7 @@ export default function ContactPage() {
                   <select
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    suppressHydrationWarning
                     className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white text-sm focus:outline-none focus:border-red-500 transition-colors cursor-pointer"
                   >
                     <option value="Editorial Feedback" className="bg-zinc-900 text-white">Editorial Feedback & Corrections</option>
@@ -239,6 +244,7 @@ export default function ContactPage() {
                     placeholder="Tell us about your query, proposal, or thoughts on our movie coverage..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    suppressHydrationWarning
                     className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-red-500 transition-colors resize-none"
                   />
                 </div>
@@ -246,10 +252,11 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 px-6 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-bold shadow-xl shadow-red-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer hover:scale-101 disabled:opacity-70 disabled:cursor-not-allowed"
+                  suppressHydrationWarning
+                  className="w-full py-3.5 px-6 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   <Send className="w-4 h-4" />
-                  {isSubmitting ? "Transmitting..." : "Transmit Message"}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
 
                 <p className="text-[11px] text-zinc-500 text-center">

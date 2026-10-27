@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { getAllCategories, getReviewsByCategory } from "@/lib/reviews";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
 import { AdSlot } from "@/components/ads/AdSlot";
-import { ChevronRight, Film, Sparkles } from "lucide-react";
+import { ChevronRight, Film, Clapperboard } from "lucide-react";
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;
@@ -62,11 +62,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </nav>
 
       {/* Category Hero Banner */}
-      <header className="rounded-3xl p-8 sm:p-12 glass-panel border border-white/10 bg-gradient-to-r from-red-950/40 via-zinc-900/90 to-zinc-950 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative z-10 max-w-2xl space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/20 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider">
+      <header className="rounded-2xl p-8 sm:p-12 border border-zinc-800 bg-zinc-900 relative">
+        <div className="max-w-2xl space-y-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/40 border border-red-500/20 text-red-400 text-xs font-bold uppercase tracking-wider">
             <Film className="w-3.5 h-3.5" />
             <span>Category Archive</span>
           </div>
@@ -91,8 +89,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       {/* Category Reviews Grid */}
       <section>
         {reviews.length === 0 ? (
-          <div className="py-20 text-center glass-panel rounded-3xl p-8 border border-white/10">
-            <Sparkles className="w-10 h-10 text-zinc-600 mx-auto mb-3" />
+          <div className="py-20 text-center rounded-2xl p-8 border border-zinc-800 bg-zinc-900">
+            <Clapperboard className="w-10 h-10 text-zinc-600 mx-auto mb-3" />
             <h3 className="text-xl font-bold text-white mb-2">
               Reviews Coming Soon
             </h3>
@@ -101,13 +99,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </p>
             <Link
               href="/"
-              className="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-all"
+              className="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-colors"
             >
               Explore All Reviews
             </Link>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {reviews.map((review) => (
               <ReviewCard key={review.slug} review={review} />
             ))}

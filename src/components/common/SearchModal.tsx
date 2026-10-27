@@ -40,11 +40,14 @@ export function SearchModal({ isOpen, onClose, reviews }: SearchModalProps) {
             placeholder="Search by movie title, actor, or director (e.g., SRK, Nolan, Dune)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            suppressHydrationWarning
             className="w-full bg-transparent text-white placeholder-zinc-500 text-sm focus:outline-none"
           />
           <button
+            type="button"
             onClick={onClose}
-            className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5"
+            suppressHydrationWarning
+            className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-white/5 cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>

@@ -144,10 +144,6 @@ export default async function ReviewDetailPage({ params }: PageProps) {
             <Clock className="w-4 h-4 text-zinc-500" />
             <span>{review.readingTime}</span>
           </div>
-          <div className="ml-auto hidden sm:flex items-center gap-1 text-xs text-emerald-400">
-            <ShieldCheck className="w-4 h-4" />
-            <span>Editorial Standards Verified</span>
-          </div>
         </div>
       </header>
 

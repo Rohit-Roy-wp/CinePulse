@@ -48,28 +48,26 @@ body {
   background: #374151;
 }
 
-/* Glassmorphism */
+/* Solid Matte Surfaces instead of liquid frosted glass */
 .glass-panel {
-  background: rgba(18, 21, 31, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #12151f;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-nav {
-  background: rgba(9, 10, 15, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(9, 10, 15, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Glow effects */
+/* Subtle editorial focus shadows instead of neon glows */
 .glow-red {
-  box-shadow: 0 0 25px rgba(229, 9, 20, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .glow-gold {
-  box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 /* Prose Styling for MDX content */
@@ -86,8 +84,8 @@ body {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
-  border-left: 4px solid #e50914;
-  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .prose-cinema h3 {
@@ -108,15 +106,12 @@ body {
 }
 
 .prose-cinema blockquote {
-  border-left: 4px solid #f59e0b;
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
   padding-left: 1.25rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
   font-style: italic;
-  color: #fef3c7;
-  background: rgba(245, 158, 11, 0.05);
-  border-radius: 0 8px 8px 0;
-  padding: 1rem 1.25rem;
+  color: #e5e7eb;
 }
 
 .prose-cinema hr {

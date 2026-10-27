@@ -27,11 +27,11 @@ export default function TermsPage() {
       </header>
 
       {/* Main Terms Body */}
-      <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-white/10 space-y-8 leading-relaxed text-sm sm:text-base">
+      <div className="p-8 sm:p-12 rounded-2xl border border-zinc-800 bg-zinc-900 space-y-8 leading-relaxed text-sm sm:text-base">
 
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
-            <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+            <FileText className="w-5 h-5 text-zinc-400" />
             1. Agreement to Terms
           </h2>
           <p className="text-zinc-400">
@@ -41,7 +41,7 @@ export default function TermsPage() {
 
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
-            <Copyright className="w-5 h-5 text-amber-500" />
+            <Copyright className="w-5 h-5 text-zinc-400" />
             2. Intellectual Property Rights & Content Ownership
           </h2>
           <p className="text-zinc-400">
@@ -50,9 +50,9 @@ export default function TermsPage() {
         </section>
 
         {/* Fair Use Section */}
-        <section className="space-y-3 p-6 rounded-2xl bg-zinc-900/80 border border-white/10">
+        <section className="space-y-3 p-6 rounded-xl bg-zinc-950 border border-zinc-800">
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
-            <ShieldAlert className="w-5 h-5 text-red-500" />
+            <ShieldAlert className="w-5 h-5 text-zinc-400" />
             3. Fair Use Doctrine & Movie Media Disclaimer
           </h2>
           <p className="text-zinc-400 text-sm">
@@ -64,7 +64,7 @@ export default function TermsPage() {
         </section>
 
         {/* Anti-Piracy Rule */}
-        <section className="space-y-3 p-6 rounded-2xl bg-red-950/20 border border-red-500/20">
+        <section className="space-y-3 p-6 rounded-xl bg-zinc-950 border border-zinc-800">
           <h2 className="text-xl font-bold text-red-400">
             4. Absolute Prohibition of Digital Piracy
           </h2>

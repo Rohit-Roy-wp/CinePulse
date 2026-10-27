@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
       </header>
 
       {/* Main Legal Content */}
-      <div className="glass-panel p-8 sm:p-12 rounded-3xl border border-white/10 space-y-8 leading-relaxed text-sm sm:text-base">
+      <div className="p-8 sm:p-12 rounded-2xl border border-zinc-800 bg-zinc-900 space-y-8 leading-relaxed text-sm sm:text-base">
 
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
