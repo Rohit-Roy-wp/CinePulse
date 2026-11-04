@@ -15,7 +15,7 @@ CinePulse follows a Hybrid Static Generation (SSG) with Incremental Static Regen
 ```
   ┌─────────────────────────────────────────────────────────────┐
   │                 content/reviews/*.mdx                       │
-  │     (Frontmatter + Markdown Content for 50+ Films)          │
+  │     (Frontmatter + Markdown Content for 60+ Films)          │
   └──────────────────────────────┬──────────────────────────────┘
                                  │
                                  ▼
@@ -47,7 +47,7 @@ CinePulse/
 │   └── reviews/               # MDX review files with YAML frontmatter
 │       ├── udta-teer.mdx
 │       ├── the-beekeeper.mdx
-│       └── ... (50+ critique files)
+│       └── ... (60+ critique files)
 ├── docs/                      # Architectural & design documentation
 │   ├── ARCHITECTURE.md
 │   ├── DESIGN.md
