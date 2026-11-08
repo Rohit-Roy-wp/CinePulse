@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Navbar } from "./Navbar";
 import { SearchModal } from "../common/SearchModal";
+import { FestiveBanner } from "../common/FestiveBanner";
 import { ReviewPost } from "@/lib/types";
 
 interface SiteHeaderProps {
@@ -14,6 +15,7 @@ export function SiteHeader({ reviews = [] }: SiteHeaderProps) {
 
   return (
     <>
+      <FestiveBanner />
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
       <SearchModal
         isOpen={searchOpen}

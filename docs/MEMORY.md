@@ -61,6 +61,16 @@ This document stores persistent historical context, key architectural decisions,
 
 ---
 
+### Decision 6: Automated Festival Greetings & Cinema Aesthetics Overhaul
+- **Context:** User requested an automated, year-round festive greeting system to wish readers on major Indian and global festivals (Diwali, New Year, Republic Day, Holi, Eid, Independence Day, Christmas).
+- **Design Iteration (3/10 to 9/10):**
+  - *Initial V1 (Rated 3/10):* Used a left-aligned strip with an e-commerce-style rectangular button (*"Festive Watchlist $\rightarrow$"*), which looked like a cramped SaaS/cookie notification banner and clashed with the cinematic hero section.
+  - *Refactored V2 (Rated 9/10):* Completely stripped out the corporate utility button. Switched to a strictly centered, atmospheric cinema aesthetic with deep obsidian background (`#06070a`), subtle amber/gold hairline border, and warm radial glow. Positioned the close `(X)` button absolute-right to preserve perfect mathematical center alignment.
+- **Automation Engine:** Built `src/lib/festivals.ts` to automatically detect date ranges and year-rollover (e.g. Dec 30 – Jan 02) without requiring manual code changes for future festivals.
+- **Hydration & Persistence:** Integrated with `localStorage` (`cineverse_festive_dismissed_{id}`) and React 19 mounted guard to guarantee zero hydration mismatch errors.
+
+---
+
 ## 3. Essential Commands Reference
 
 ```powershell

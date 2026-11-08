@@ -71,6 +71,15 @@ This document tracks all completed engineering milestones, active features, and 
 - [x] Fixed YAML indentation formatting on `hanuman-ansh.mdx` (`trending: false`).
 - [x] Verified 100% clean parsing across all 61 MDX files via `gray-matter` validation pipeline with zero syntax or frontmatter errors.
 
+### Milestone 10: Automated Festival Greetings Engine & Announcement Ribbon
+- [x] Created `src/lib/festivals.ts` with year-round calendar configuration (Diwali, New Year, Republic Day, Holi, Eid, Independence Day, Gandhi Jayanti, Christmas, etc.).
+- [x] Implemented `getActiveFestival()` with automatic date-window detection, year-rollover handling, and festival metadata (icon, greeting, CTA link, theme styling).
+- [x] Built `src/components/common/FestiveBanner.tsx` with premium cinema styling (dark obsidian + amber/gold accents), dismissibility (`X` button), `localStorage` dismissal persistence, and zero layout shift (CLS = 0).
+- [x] Integrated `<FestiveBanner />` seamlessly into `<SiteHeader />` across all desktop and mobile views.
+- [x] Refactored banner from a 3/10 SaaS utility bar into a 9/10 pure cinema centered title-card aesthetic (removed jarring rectangular block button, centered typography, atmospheric ambient glow).
+- [x] Adhered to Next.js 16 / React 19 hydration rules (`suppressHydrationWarning`, `type="button"`, mounted client guard).
+- [x] Verified functionality for current date (Diwali) and future calendar festivals with automated test script and clean compilation.
+
 ---
 
 ## 2. Active Roadmap & Future Tasks

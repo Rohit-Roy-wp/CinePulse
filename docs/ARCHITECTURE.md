@@ -78,6 +78,7 @@ CinePulse/
 │   │   │   └── AdSlot.tsx     # Responsive zero-layout-shift AdSense container
 │   │   ├── common/
 │   │   │   ├── CookieConsent.tsx # GDPR/ePrivacy compliant banner
+│   │   │   ├── FestiveBanner.tsx # Automated date-driven festival greetings ribbon
 │   │   │   └── SearchModal.tsx   # Global instantaneous search modal
 │   │   ├── layout/
 │   │   │   ├── Navbar.tsx     # Top sticky nav with 1680px canvas
@@ -94,6 +95,7 @@ CinePulse/
 │   │   └── seo/
 │   │       └── JsonLd.tsx     # Schema.org Movie & Review structured data
 │   └── lib/
+│       ├── festivals.ts       # Automated year-round festival calendar & greeting engine
 │       ├── reviews.ts         # Content filesystem reader & query methods
 │       ├── types.ts           # TypeScript interfaces (ReviewPost, Frontmatter)
 │       └── utils.ts           # Date formatters, reading time, parsers
